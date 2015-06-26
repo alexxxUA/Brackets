@@ -1,0 +1,27 @@
+.file-icon {
+	text-align: center;
+	font-size: 16px;
+	width: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+.jstree ins.file-tree-view-icon {
+	margin-left: -20px;
+	background-image: none;
+}
+
+#project-files-container a {
+	padding-left: 9px;
+}
+.icons-margin-correction #project-files-container a {
+	padding-left: 10009px;
+}
+
+.file-icon-c:before {
+	content: '{ }';
+}
+
+.file-icon-rotated {
+	transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+}
