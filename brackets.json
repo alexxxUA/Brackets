@@ -1,0 +1,11 @@
+{
+    "linting.collapsed": true,
+    "debug.showErrorsInStatusBar": true,
+    "me.drewh.jsbeautify.on_save": false,
+    "themes.theme": "Themes-for-Brackets-dark-soda",
+    "themes.themeScrollbars": true,
+    "fonts.fontFamily": "Consolas, monospace;",
+    "livedev.multibrowser": true,
+    "bracket-match-highlighter.enabled": true,
+    "closeBrackets": true
+}
