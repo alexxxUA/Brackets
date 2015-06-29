@@ -256,5 +256,13 @@
             "source": "system"
         }
     ],
-    "customToolbar.red": true
+    "customToolbar.red": true,
+    "dnbard.documents-toolbar.icons": true,
+    "dnbard.documents-toolbar.smallIcons": false,
+    "dnbard.documents-toolbar.tooltip": false,
+    "dnbard.documents-toolbar.close_left": false,
+    "dnbard.documents-toolbar.workingFiles": false,
+    "dnbard.documents-toolbar.brackets_font": true,
+    "dnbard.documents-toolbar.grayscaleIcons": false,
+    "dnbard.documents-toolbar.showCloseButton": true
 }
