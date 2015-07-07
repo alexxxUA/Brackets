@@ -9,7 +9,7 @@
     "bracket-match-highlighter.enabled": true,
     "closeBrackets": true,
     "brackets-git.gitPath": "C:\\Program Files (x86)\\Git\\cmd\\git.exe",
-    "brackets-git.stripWhitespaceFromCommits": true,
+    "brackets-git.stripWhitespaceFromCommits": false,
     "brackets-git.addEndlineToTheEndOfFile": false,
     "brackets-git.removeByteOrderMark": false,
     "brackets-git.normalizeLineEndings": false,
