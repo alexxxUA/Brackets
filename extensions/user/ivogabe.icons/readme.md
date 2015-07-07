@@ -12,6 +12,7 @@ The following files are supported out of the box at the moment:
  - TypeScript
  - CoffeeScript
  - LiveScript
+ - Dart
  - Haml
  - HTML
  - SVG
@@ -19,7 +20,7 @@ The following files are supported out of the box at the moment:
  - C, C++, C#
  - Swift
  - PHP, SQL
- - Java, Scala, Groovy
+ - Java, Scala, Groovy, Manifests
  - Ruby, Embedded Ruby, RDoc, Cucumber Feature files
  - Perl
  - Lua
@@ -27,6 +28,8 @@ The following files are supported out of the box at the moment:
  - VB, VBScript
  - Clojure
  - CSS, SASS, Less, Stylus
+ - Python
+ - QtQuick
  - Shell script, Batch
  - Jade
  - Handlebars
@@ -60,8 +63,19 @@ Open Brackets, and click the extensions button on the right. Search for 'Bracket
 
 Customizability
 --------------
-For information on how to customize icons, click [here](customizability.md)!
+You can choose the icon set in the view menu. You can choose between the icons of Ionicons (default) and Devicons.
+Besides these presets, you can also customize specific extensions. For information on how to customize icons, click [here](customizability.md).
+
+How to build
+------------
+If you don't grab the extension from the extension registry (see 'How to install'), you have to build it manually.
+You need to install [node](https://nodejs.org/) first. After that installation you can install the dependencies in a command line / terminal window.
+```
+npm install gulp -g
+npm install
+```
+When you've installed the dependencies, you can build the project by running `gulp` in the terminal.
 
 License
 -------
-Brackets Icons is licensed under the [MIT license](http://opensource.org/licenses/MIT). Ionicons is also licensed under the MIT license.
+Brackets Icons is licensed under the [MIT license](http://opensource.org/licenses/MIT). Ionicons and Devicons are also licensed under the MIT license.
