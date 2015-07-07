@@ -1,7 +1,7 @@
 {
     "linting.collapsed": true,
     "debug.showErrorsInStatusBar": true,
-    "me.drewh.jsbeautify.on_save": true,
+    "me.drewh.jsbeautify.on_save": false,
     "themes.theme": "Themes-for-Brackets-dark-soda",
     "themes.themeScrollbars": true,
     "fonts.fontFamily": "Consolas, monospace;",
@@ -264,5 +264,6 @@
     "dnbard.documents-toolbar.workingFiles": false,
     "dnbard.documents-toolbar.brackets_font": true,
     "dnbard.documents-toolbar.grayscaleIcons": false,
-    "dnbard.documents-toolbar.showCloseButton": true
+    "dnbard.documents-toolbar.showCloseButton": true,
+    "brackets-icons.iconset": "devicons"
 }
