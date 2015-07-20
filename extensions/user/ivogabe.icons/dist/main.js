@@ -5,20 +5,26 @@ define(["require", "exports", 'module', './icon', './dictionary', './icon-dictio
     var prefs = PreferencesManager.getExtensionPrefs('brackets-icons');
     prefs.definePreference('icons', 'object', {});
     prefs.definePreference('iconset', 'string', 'ionicons');
+    prefs.definePreference('secondary', 'boolean', true);
     // Change iconset menu options
     var CommandManager = brackets.getModule('command/CommandManager');
     var Menus = brackets.getModule('command/Menus');
+    var commandThemeSecondary = 'icons.show-secondary';
     var commandThemeIonId = 'icons.iconset-ionicons';
     var commandThemeDevId = 'icons.iconset-devicons';
+    var commandSecondary = CommandManager.register('Show secondary icons', commandThemeSecondary, function () { prefs.set('secondary', !icons.secondary); });
     var commandThemeIon = CommandManager.register('Ionicons', commandThemeIonId, function () { prefs.set('iconset', 'ionicons'); });
     var commandThemeDev = CommandManager.register('Devicons', commandThemeDevId, function () { prefs.set('iconset', 'devicons'); });
     var menuView = Menus.getMenu(Menus.AppMenuBar.VIEW_MENU);
     menuView.addMenuDivider();
+    menuView.addMenuItem(commandSecondary);
     menuView.addMenuItem(commandThemeIonId);
     menuView.addMenuItem(commandThemeDevId);
     function loadPreferences() {
         icons.user.settings = prefs.get('icons');
         icons.iconSet = icon_1.getIconSet(prefs.get('iconset'));
+        icons.secondary = prefs.get('secondary');
+        commandSecondary.setChecked(icons.secondary);
         commandThemeIon.setChecked(icons.iconSet === icon_1.IconSet.IconIon);
         commandThemeDev.setChecked(icons.iconSet === icon_1.IconSet.IconDev);
     }
@@ -37,33 +43,34 @@ define(["require", "exports", 'module', './icon', './dictionary', './icon-dictio
     ExtensionUtils.loadStyleSheet(module, '../styles/font-awesome.min.css');
     ExtensionUtils.loadStyleSheet(module, '../styles/devicons.min.css');
     loadPreferences();
+    var createIcon = function (data, secondary) {
+        var type = secondary ? 'secondary' : 'main';
+        var size = secondary ? 0.75 : 1;
+        var $icon = $('<div>');
+        $icon.addClass(data.icon);
+        $icon.addClass('file-icon file-tree-view-icon file-icon-' + type);
+        $icon.css({
+            color: data.color,
+            fontSize: (data.size || 16) * size + 'px'
+        });
+        return $icon;
+    };
     var provider = function (entry) {
         if (!entry.isFile) {
             return;
         }
-        var data = dictionary_1.findInDictionary(icons, entry.name);
-        var mainIcon = data[data.length - 1];
-        var secondIcon = data[data.length - 2];
+        var data = dictionary_1.findInDictionary(icons, entry.name, icons.secondary, function (a, b) {
+            if (a === b)
+                return true;
+            if (a === undefined || b === undefined)
+                return false;
+            return a.color === b.color && a.icon === b.icon && a.size === b.size;
+        });
         var $icon = $('<ins>');
         $icon.addClass('file-icon-box');
-        var $main = $('<div>');
-        $main.addClass(mainIcon.icon);
-        $main.addClass('file-icon file-icon-main file-tree-view-icon');
-        $main.css({
-            color: mainIcon.color,
-            fontSize: (mainIcon.size || 16) + 'px'
-        });
-        $icon.append($main);
-        if (secondIcon !== undefined) {
-            var $second = $('<div>');
-            $second.addClass(secondIcon.icon);
-            $second.addClass('file-icon file-icon-secondary file-tree-view-icon');
-            $second.css({
-                color: secondIcon.color,
-                fontSize: (secondIcon.size || 16) * 3 / 4 + 'px'
-            });
-            $icon.append($second);
-        }
+        $icon.append(createIcon(data[0], false));
+        if (data[1] !== undefined)
+            $icon.append(createIcon(data[1], true));
         return $icon;
     };
     WorkingSetView.addIconProvider(provider);
