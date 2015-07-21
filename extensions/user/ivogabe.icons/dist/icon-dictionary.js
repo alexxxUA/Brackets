@@ -4,6 +4,7 @@ define(["require", "exports", './icon', './preset-dictionary', './user-dictionar
             if (settings === void 0) { settings = {}; }
             this.color = icon_1.IconSet.ColorLight;
             this.iconSet = icon_1.IconSet.IconIon;
+            this.secondary = true;
             this.user = new user_dictionary_1.UserDictionary(settings);
         }
         IconDictionary.prototype.toIcon = function (preset) {

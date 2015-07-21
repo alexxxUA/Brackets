@@ -90,7 +90,7 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
         set('json', (_q = {},
             _q[icon_1.IconSet.ColorLight] = '#e5a228',
             _q[icon_1.IconSet.IconIon] = 'ion-ios-gear',
-            _q[icon_1.IconSet.IconDev] = 'devicons devicons-javascript',
+            _q[icon_1.IconSet.IconDev] = 'devicons devicons-aptana',
             _q
         ));
         set('ls', (_r = {},
@@ -128,13 +128,13 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
         set('scala', (_w = {},
             _w[icon_1.IconSet.ColorLight] = '#72d0eb',
             _w[icon_1.IconSet.IconIon] = 'ion-navicon-round file-icon-rotated',
-            _w[icon_1.IconSet.IconDev] = 'devicons devicons-java',
+            _w[icon_1.IconSet.IconDev] = 'devicons devicons-scala',
             _w
         ));
         set('groovy', (_x = {},
             _x[icon_1.IconSet.ColorLight] = '#4298b8',
             _x[icon_1.IconSet.IconIon] = 'ion-ios-star',
-            _x[icon_1.IconSet.IconDev] = 'devicons devicons-groovy',
+            _x[icon_1.IconSet.IconDev] = ['devicons devicons-groovy', 18],
             _x
         ));
         set('mf', (_y = {},
@@ -212,13 +212,13 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
         set(['rb', 'erb', 'rdoc'], (_10 = {},
             _10[icon_1.IconSet.ColorLight] = '#9b111e',
             _10[icon_1.IconSet.IconIon] = 'ion-heart',
-            _10[icon_1.IconSet.IconDev] = 'devicons devicons-ruby',
+            _10[icon_1.IconSet.IconDev] = ['devicons devicons-ruby', 14],
             _10
         ));
         set('feature', (_11 = {},
             _11[icon_1.IconSet.ColorLight] = '#4e8b39',
             _11[icon_1.IconSet.IconIon] = 'ion-chatbox-working',
-            _11[icon_1.IconSet.IconDev] = 'devicons devicons-ruby',
+            _11[icon_1.IconSet.IconDev] = ['devicons devicons-ruby', 14],
             _11
         ));
         // Python
@@ -380,47 +380,62 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
         set('zip', (_37 = {},
             _37[icon_1.IconSet.ColorLight] = '#008858',
             _37[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _37[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _37
         ));
         set('rar', (_38 = {},
             _38[icon_1.IconSet.ColorLight] = '#005888',
             _38[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _38[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _38
         ));
         set('7z', (_39 = {},
             _39[icon_1.IconSet.ColorLight] = '#880058',
             _39[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _39[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _39
         ));
         set('tgz', (_40 = {},
             _40[icon_1.IconSet.ColorLight] = '#7900bc',
             _40[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _40[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _40
         ));
         set('tar', (_41 = {},
             _41[icon_1.IconSet.ColorLight] = '#885800',
             _41[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _41[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _41
         ));
         set('gz', (_42 = {},
             _42[icon_1.IconSet.ColorLight] = '#588800',
             _42[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _42[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _42
         ));
         set('bzip', (_43 = {},
             _43[icon_1.IconSet.ColorLight] = '#884300',
             _43[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _43[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _43
         ));
         set('msi', (_44 = {},
             _44[icon_1.IconSet.ColorLight] = '#6f8696',
             _44[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _44[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _44
         ));
         set('dmg', (_45 = {},
             _45[icon_1.IconSet.ColorLight] = '#6f8696',
             _45[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _45[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
             _45
+        ));
+        set('xpi', (_46 = {},
+            _46[icon_1.IconSet.ColorLight] = '#5bac0d',
+            _46[icon_1.IconSet.IconIon] = 'ion-briefcase',
+            _46[icon_1.IconSet.IconDev] = ['devicons devicons-netbeans', 17],
+            _46
         ));
         // Settings
         set([
@@ -437,125 +452,136 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
             'gruntrc',
             'jsrc',
             'pro',
-            'editorconfig'
-        ], (_46 = {},
-            _46[icon_1.IconSet.ColorLight] = '#777777',
-            _46[icon_1.IconSet.IconIon] = 'ion-ios-gear',
-            _46[icon_1.IconSet.IconDev] = 'devicons devicons-aptana',
-            _46
-        ));
-        set('csproj', (_47 = {},
-            _47[icon_1.IconSet.ColorLight] = '#5bb552',
-            _47[icon_1.IconSet.IconIon] = ['ion-ios-paper-outline', 18],
+            'editorconfig',
+            'iml'
+        ], (_47 = {},
+            _47[icon_1.IconSet.ColorLight] = '#777777',
+            _47[icon_1.IconSet.IconIon] = 'ion-ios-gear',
             _47[icon_1.IconSet.IconDev] = 'devicons devicons-aptana',
             _47
         ));
-        set('vbproj', (_48 = {},
-            _48[icon_1.IconSet.ColorLight] = '#486dae',
+        set('csproj', (_48 = {},
+            _48[icon_1.IconSet.ColorLight] = '#5bb552',
             _48[icon_1.IconSet.IconIon] = ['ion-ios-paper-outline', 18],
             _48[icon_1.IconSet.IconDev] = 'devicons devicons-aptana',
             _48
         ));
-        set('sln', (_49 = {},
-            _49[icon_1.IconSet.ColorLight] = '#87c5de',
+        set('vbproj', (_49 = {},
+            _49[icon_1.IconSet.ColorLight] = '#486dae',
             _49[icon_1.IconSet.IconIon] = ['ion-ios-paper-outline', 18],
             _49[icon_1.IconSet.IconDev] = 'devicons devicons-aptana',
             _49
         ));
-        // Other text files
-        set('txt', (_50 = {},
-            _50[icon_1.IconSet.ColorLight] = '#4192c1',
-            _50[icon_1.IconSet.IconIon] = 'ion-document-text',
+        set('sln', (_50 = {},
+            _50[icon_1.IconSet.ColorLight] = '#87c5de',
+            _50[icon_1.IconSet.IconIon] = ['ion-ios-paper-outline', 18],
+            _50[icon_1.IconSet.IconDev] = 'devicons devicons-aptana',
             _50
         ));
-        set('log', (_51 = {},
-            _51[icon_1.IconSet.ColorLight] = '#225dc9',
-            _51[icon_1.IconSet.IconIon] = 'ion-clipboard',
+        // Other text files
+        set('txt', (_51 = {},
+            _51[icon_1.IconSet.ColorLight] = '#4192c1',
+            _51[icon_1.IconSet.IconIon] = 'ion-document-text',
             _51
         ));
-        set('npmignore', (_52 = {},
-            _52[icon_1.IconSet.ColorLight] = '#cb3837',
-            _52[icon_1.IconSet.IconIon] = ['ion-minus-circled', 14],
-            _52[icon_1.IconSet.IconDev] = 'devicons devicons-npm',
+        set('log', (_52 = {},
+            _52[icon_1.IconSet.ColorLight] = '#225dc9',
+            _52[icon_1.IconSet.IconIon] = 'ion-clipboard',
             _52
         ));
-        set('slugignore', (_53 = {},
-            _53[icon_1.IconSet.ColorLight] = '#0da064',
+        set('npmignore', (_53 = {},
+            _53[icon_1.IconSet.ColorLight] = '#cb3837',
             _53[icon_1.IconSet.IconIon] = ['ion-minus-circled', 14],
+            _53[icon_1.IconSet.IconDev] = 'devicons devicons-npm',
             _53
         ));
-        set(['yml', 'yaml'], (_54 = {},
-            _54[icon_1.IconSet.ColorLight] = '#008000',
-            _54[icon_1.IconSet.IconIon] = ['ion-navicon', 14],
+        set('slugignore', (_54 = {},
+            _54[icon_1.IconSet.ColorLight] = '#0da064',
+            _54[icon_1.IconSet.IconIon] = ['ion-minus-circled', 14],
             _54
         ));
-        set('sqf', (_55 = {},
-            _55[icon_1.IconSet.ColorLight] = '#b9e11f',
-            _55[icon_1.IconSet.IconIon] = 'ion-wand',
+        set('dockerignore', (_55 = {},
+            _55[icon_1.IconSet.ColorLight] = '#0296C9',
+            _55[icon_1.IconSet.IconIon] = ['ion-minus-circled', 14],
             _55
         ));
-        // LaTeX
-        set(['tex', 'bib', 'sty'], (_56 = {},
-            _56[icon_1.IconSet.ColorLight] = '#262686',
-            _56[icon_1.IconSet.IconIon] = 'ion-document-text',
+        set('jpmignore', (_56 = {},
+            _56[icon_1.IconSet.ColorLight] = '#5bac0d',
+            _56[icon_1.IconSet.IconIon] = ['ion-minus-circled', 14],
             _56
         ));
-        //Singular Types
-        set('applescript', (_57 = {},
-            _57[icon_1.IconSet.ColorLight] = '#afafaf',
-            _57[icon_1.IconSet.IconIon] = 'ion-social-apple',
-            _57[icon_1.IconSet.IconDev] = 'devicons devicons-apple',
+        set(['yml', 'yaml'], (_57 = {},
+            _57[icon_1.IconSet.ColorLight] = '#008000',
+            _57[icon_1.IconSet.IconIon] = ['ion-navicon', 14],
             _57
         ));
-        set('textile', (_58 = {},
-            _58[icon_1.IconSet.ColorLight] = '#6f8696',
-            _58[icon_1.IconSet.IconIon] = 'ion-quote',
+        set('sqf', (_58 = {},
+            _58[icon_1.IconSet.ColorLight] = '#b9e11f',
+            _58[icon_1.IconSet.IconIon] = 'ion-wand',
             _58
         ));
-        set('matlab', (_59 = {},
-            _59[icon_1.IconSet.ColorLight] = '#014495',
-            _59[icon_1.IconSet.IconIon] = 'ion-clipboard',
+        // LaTeX
+        set(['tex', 'bib', 'sty'], (_59 = {},
+            _59[icon_1.IconSet.ColorLight] = '#262686',
+            _59[icon_1.IconSet.IconIon] = 'ion-document-text',
             _59
         ));
-        set('lisp', (_60 = {},
-            _60[icon_1.IconSet.ColorLight] = '#f8c63d',
-            _60[icon_1.IconSet.IconIon] = 'ion-ios-paperplane',
+        //Singular Types
+        set('applescript', (_60 = {},
+            _60[icon_1.IconSet.ColorLight] = '#afafaf',
+            _60[icon_1.IconSet.IconIon] = 'ion-social-apple',
+            _60[icon_1.IconSet.IconDev] = 'devicons devicons-apple',
             _60
         ));
-        set('xsl', (_61 = {},
-            _61[icon_1.IconSet.ColorLight] = '#68217a',
-            _61[icon_1.IconSet.IconIon] = 'ion-code',
-            _61[icon_1.IconSet.IconDev] = 'devicons devicons-code',
+        set('textile', (_61 = {},
+            _61[icon_1.IconSet.ColorLight] = '#6f8696',
+            _61[icon_1.IconSet.IconIon] = 'ion-quote',
             _61
         ));
-        set('tcl', (_62 = {},
-            _62[icon_1.IconSet.ColorLight] = '#c3b15f',
-            _62[icon_1.IconSet.IconIon] = 'ion-code',
-            _62[icon_1.IconSet.IconDev] = 'devicons devicons-code',
+        set('matlab', (_62 = {},
+            _62[icon_1.IconSet.ColorLight] = '#014495',
+            _62[icon_1.IconSet.IconIon] = 'ion-clipboard',
             _62
         ));
-        set('rst', (_63 = {},
-            _63[icon_1.IconSet.ColorLight] = '#6f8696',
-            _63[icon_1.IconSet.IconIon] = 'ion-ios-paper',
-            _63[icon_1.IconSet.IconDev] = 'devicons devicons-rust',
+        set('lisp', (_63 = {},
+            _63[icon_1.IconSet.ColorLight] = '#f8c63d',
+            _63[icon_1.IconSet.IconIon] = 'ion-ios-paperplane',
             _63
         ));
-        set('d', (_64 = {},
-            _64[icon_1.IconSet.ColorLight] = '#960000',
-            _64[icon_1.IconSet.IconIon] = 'ion-contrast',
+        set('xsl', (_64 = {},
+            _64[icon_1.IconSet.ColorLight] = '#68217a',
+            _64[icon_1.IconSet.IconIon] = 'ion-code',
+            _64[icon_1.IconSet.IconDev] = 'devicons devicons-code',
             _64
         ));
-        set('r', (_65 = {},
-            _65[icon_1.IconSet.ColorLight] = '#8495C0',
-            _65[icon_1.IconSet.IconIon] = 'ion-ios-analytics',
+        set('tcl', (_65 = {},
+            _65[icon_1.IconSet.ColorLight] = '#c3b15f',
+            _65[icon_1.IconSet.IconIon] = 'ion-code',
+            _65[icon_1.IconSet.IconDev] = 'devicons devicons-code',
             _65
         ));
-        set('map', (_66 = {},
-            _66[icon_1.IconSet.ColorLight] = '#e0591f',
-            _66[icon_1.IconSet.IconIon] = 'ion-ios-photos-outline',
+        set('rst', (_66 = {},
+            _66[icon_1.IconSet.ColorLight] = '#6f8696',
+            _66[icon_1.IconSet.IconIon] = 'ion-ios-paper',
+            _66[icon_1.IconSet.IconDev] = ['devicons devicons-rust', 18],
             _66
         ));
-        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66;
+        set('d', (_67 = {},
+            _67[icon_1.IconSet.ColorLight] = '#960000',
+            _67[icon_1.IconSet.IconIon] = 'ion-contrast',
+            _67
+        ));
+        set('r', (_68 = {},
+            _68[icon_1.IconSet.ColorLight] = '#8495C0',
+            _68[icon_1.IconSet.IconIon] = 'ion-ios-analytics',
+            _68
+        ));
+        set('map', (_69 = {},
+            _69[icon_1.IconSet.ColorLight] = '#e0591f',
+            _69[icon_1.IconSet.IconIon] = 'ion-ios-photos-outline',
+            _69
+        ));
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69;
     }
     exports.setExtensions = setExtensions;
     function setPrefixes(set) {
@@ -573,6 +599,13 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
     }
     exports.setPrefixes = setPrefixes;
     function setFullFileNames(set) {
+        set('Dockerfile', (_a = {},
+            _a[icon_1.IconSet.ColorLight] = '#0296C9',
+            _a[icon_1.IconSet.IconIon] = ['ion-navicon', 14],
+            _a[icon_1.IconSet.IconDev] = ['devicons devicons-docker', 18],
+            _a
+        ));
+        var _a;
     }
     exports.setFullFileNames = setFullFileNames;
     function setFileNames(set) {
@@ -582,19 +615,24 @@ define(["require", "exports", './icon'], function (require, exports, icon_1) {
             _a[icon_1.IconSet.IconDev] = 'devicons devicons-npm',
             _a
         ));
-        set('gulpfile', ['js', 'ts', 'coffee', 'babel.js'], (_b = {},
-            _b[icon_1.IconSet.ColorLight] = '#eb4a4b',
-            _b[icon_1.IconSet.IconIon] = 'ion-hammer',
-            _b[icon_1.IconSet.IconDev] = 'devicons devicons-gulp',
+        set(['.brackets', 'brackets'], ['json'], (_b = {},
+            _b[icon_1.IconSet.ColorLight] = '#0083e8',
+            _b[icon_1.IconSet.IconDev] = 'devicons devicons-brackets',
             _b
         ));
-        set('gruntfile', ['js'], (_c = {},
-            _c[icon_1.IconSet.ColorLight] = '#fba919',
+        set('gulpfile', ['js', 'ts', 'coffee', 'babel.js'], (_c = {},
+            _c[icon_1.IconSet.ColorLight] = '#eb4a4b',
             _c[icon_1.IconSet.IconIon] = 'ion-hammer',
-            _c[icon_1.IconSet.IconDev] = 'devicons devicons-grunt',
+            _c[icon_1.IconSet.IconDev] = 'devicons devicons-gulp',
             _c
         ));
-        var _a, _b, _c;
+        set('gruntfile', ['js'], (_d = {},
+            _d[icon_1.IconSet.ColorLight] = '#fba919',
+            _d[icon_1.IconSet.IconIon] = 'ion-hammer',
+            _d[icon_1.IconSet.IconDev] = 'devicons devicons-grunt',
+            _d
+        ));
+        var _a, _b, _c, _d;
     }
     exports.setFileNames = setFileNames;
     function getDefault() {
