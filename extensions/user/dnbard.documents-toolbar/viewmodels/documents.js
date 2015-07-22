@@ -16,7 +16,7 @@ define(function(require, exports, module){
         MainViewManager = brackets.getModule('view/MainViewManager'),
         ProjectManager = brackets.getModule('project/ProjectManager'),
         CommandManager = brackets.getModule('command/CommandManager');
-
+    
     function DocumentsViewModel(element, panelId){
         var self = this;
 
@@ -448,20 +448,20 @@ define(function(require, exports, module){
         this.documents(this.getWorkingSet());
         this.selected(this.getCurrentDocument());
     }
-
+    
     DocumentsViewModel.prototype.getWorkingSet = function(){
         return MainViewManager.getWorkingSet(this.panelId);
     }
-
+    
     DocumentsViewModel.prototype.getCurrentDocument = function(){
         var document = DocumentManager.getCurrentDocument();
-
+        
         if (document && typeof document === 'object'){
             return document.file;
         }
         return null;
     }
-
+    
     DocumentsViewModel.prototype.getDocumentIcon = function(file){
         var name = file._name;
         return Icons.get(name);

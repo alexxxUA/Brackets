@@ -8,7 +8,7 @@ define(function(require, exports){
         template = require('text!../templates/holder.html'),
         MainViewManager = brackets.getModule('view/MainViewManager'),
         panelContentProvider = require('./panels');
-
+    
     exports.init = function(){
         var $holder = $(template),
             vm = new DocumentsViewModel($holder, 'first-pane');
@@ -17,7 +17,7 @@ define(function(require, exports){
         ko.applyBindings(vm, $holder[0]);
 
         panelContentProvider.register(vm, 'first-pane');
-
+        
         MainViewManager.on('paneCreate', function(){
             var $holder = $(template),
                 vm = new DocumentsViewModel($holder, 'second-pane');

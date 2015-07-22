@@ -1,6 +1,6 @@
 {
-	"brackets-paste-and-indent.enabled": false,
-	"linting.collapsed": true,
+    "brackets-paste-and-indent.enabled": false,
+    "linting.collapsed": true,
     "debug.showErrorsInStatusBar": true,
     "me.drewh.jsbeautify.on_save": false,
     "themes.theme": "Themes-for-Brackets-dark-soda",
