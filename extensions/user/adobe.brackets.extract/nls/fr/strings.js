@@ -31,7 +31,7 @@ define(["text!./license.html"], function (licenseText) {
 
         // Menus
 	"MENU_CC_SIGN_IN": "Se connecter à Creative Cloud\u2026",
-	"MENU_CC_SIGN_OUT": "Se déconnecter de Creative Cloud",
+	"MENU_CC_SIGN_OUT": "Se déconnecter ({0})",
 	"MENU_HELP_ONLINE": "Aide en ligne d’Extract for Brackets",
 	"MENU_HELP_TUTORIAL": "Ouvrir le didacticiel Extract for Brackets",
 
@@ -51,7 +51,7 @@ define(["text!./license.html"], function (licenseText) {
 	"GOT_IT": "Compris !",
 
 	"CALL_TO_ACTION_TITLE": "Extract est un service de <strong>Creative Cloud</strong>",
-	"CALL_TO_ACTION_MESSAGE": "Une fois connecté avec votre ID Adobe, vous pouvez télécharger un PSD ou voir les PSD déjà téléchargés, et commencer l’extraction des informations et des ressources relatives à la conception.",
+	"CALL_TO_ACTION_MESSAGE": "Une fois connecté avec votre Adobe ID, vous pouvez télécharger un PSD ou voir les PSD déjà téléchargés, et commencer l’extraction des informations et des ressources relatives à la conception.",
 	"CALL_TO_ACTION_BUTTON": "Connectez-vous gratuitement\u2026",
 
         // Commands
@@ -68,13 +68,9 @@ define(["text!./license.html"], function (licenseText) {
 	"TOOLBAR_HIDE_HINT": "Commencer",
 	"TOOLBAR_OR": "ou",
 	"GET_STARTED": "Ouvrir un PSD\u2026",
-	"GET_STARTED_DESCRIPTION": "Une fois connecté avec votre ID Adobe, vous pouvez télécharger un PSD ou voir les PSD déjà téléchargés, et commencer l’extraction des informations et des ressources relatives à la conception.",
+	"GET_STARTED_DESCRIPTION": "Une fois connecté avec votre Adobe ID, vous pouvez télécharger un PSD ou voir les PSD déjà téléchargés, et commencer l’extraction des informations et des ressources relatives à la conception.",
 	"SIGN_UP": "Vous n’avez pas de compte ?",
 	"SIGN_UP_LINK": "Créez-vous un compte gratuit.",
-	"CREATIVE_URL_LABEL": "Collez un lien partagé Creative Cloud",
-	"CREATIVE_URL_INVALID": "« <span class='dialog-filename'>{0}</span> » n’est pas un lien partagé Creative Cloud valide (URL abrégée de type Adobe.ly). Cliquez <a href='{HELP_SHARED_LINK_URL}'>ici</a> pour savoir comment partager des fichiers depuis votre compte Creative Cloud.",
-	"CREATIVE_URL_DESCRIPTION": "Ou ouvrez simplement un PSD sans vous connecter, en collant un lien partagé Creative Cloud. <a href='{HELP_SHARED_LINK_URL}'>En savoir plus sur les liens partagés Creative Cloud</a>",
-	"RESOLVING_CREATIVE_URL": "Résolution de « {0} »\u2026",
 
 	"UNSUPPORTED_BLEND_MODES": "Votre fichier comporte des modes de fusion non pris en charge. Cela risque de nuire à la qualité du rendu.",
 
@@ -98,13 +94,13 @@ define(["text!./license.html"], function (licenseText) {
 	"PREF_PRIVACY_CHECKBOX_LABEL": "Oui, je souhaite partager des données portant sur mon utilisation de l’extension Extract for Brackets.",
         
         // SUSI Modal Interstitial
-	"SUSI_LOADING_WINDOW_TITLE": "ID Adobe",
+	"SUSI_LOADING_WINDOW_TITLE": "Adobe ID",
 	"SUSI_LOADING_BASE": "Chargement\u2026",
-	"SUSI_LOADING_AUTHORIZE": "Chargement de l’ID Adobe\u2026",
-	"SUSI_LOADING_CHECK_STATUS": "Vérification de l’ID Adobe\u2026",
-	"SUSI_LOADING_CHECK_TOKEN": "Vérification de l’ID Adobe\u2026",
+	"SUSI_LOADING_AUTHORIZE": "Chargement de l’Adobe ID\u2026",
+	"SUSI_LOADING_CHECK_STATUS": "Vérification de l’Adobe ID\u2026",
+	"SUSI_LOADING_CHECK_TOKEN": "Vérification de l’Adobe ID\u2026",
 	"SUSI_LOADING_PROFILE": "Chargement du profil\u2026",
-	"SUSI_LOADING_VALIDATE_TOKEN": "Vérification de l’ID Adobe\u2026",
+	"SUSI_LOADING_VALIDATE_TOKEN": "Vérification de l’Adobe ID\u2026",
 	"SUSI_LOADING_LOGOUT": "Déconnexion\u2026",
 
         // Buttons

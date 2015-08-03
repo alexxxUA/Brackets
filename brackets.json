@@ -269,5 +269,6 @@
     "brackets-icons.iconset": "devicons",
     "useTabChar": true,
     "tabSize": 4,
-    "denniskehrig.ShowWhitespace.checked": true
+    "denniskehrig.ShowWhitespace.checked": true,
+    "fonts.fontSize": "11px"
 }

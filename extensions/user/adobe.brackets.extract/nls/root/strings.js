@@ -31,7 +31,7 @@ define(["text!./license.html"], function (licenseText) {
 
         // Menus
         "MENU_CC_SIGN_IN":                  "Sign In to Creative Cloud\u2026",
-        "MENU_CC_SIGN_OUT":                 "Sign Out of Creative Cloud",
+        "MENU_CC_SIGN_OUT":                 "Sign Out ({0})",
         "MENU_HELP_ONLINE":                 "Extract for Brackets Online Help",
         "MENU_HELP_TUTORIAL":               "Open Extract for Brackets Tutorial",
 

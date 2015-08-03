@@ -31,7 +31,7 @@ define(["text!./license.html"], function (licenseText) {
 
         // Menus
 	"MENU_CC_SIGN_IN": "Creative Cloud にサインイン\u2026",
-	"MENU_CC_SIGN_OUT": "Creative Cloud からサインアウトする",
+	"MENU_CC_SIGN_OUT": "ログアウト ({0})",
 	"MENU_HELP_ONLINE": "Extract for Brackets オンラインヘルプ",
 	"MENU_HELP_TUTORIAL": "Extract for Brackets チュートリアルを開く",
 
@@ -71,10 +71,6 @@ define(["text!./license.html"], function (licenseText) {
 	"GET_STARTED_DESCRIPTION": "Adobe ID でサインインすると、PSD をアップロードしたり、既にアップロード済みの PSD を参照してデザインの情報やアセットの抽出を開始したりすることができます。",
 	"SIGN_UP": "アカウントを持っていない場合",
 	"SIGN_UP_LINK": "無料のアカウントを取得します。",
-	"CREATIVE_URL_LABEL": "Creative Cloud 共有リンクをペースト",
-	"CREATIVE_URL_INVALID": "「<span class='dialog-filename'>{0}</span>」は、有効な Creative Cloud 共有リンク (短縮 URL の Adobe.ly) ではありません。Creative Cloud アカウントからファイルを共有する方法について詳しくは、<a href='{HELP_SHARED_LINK_URL}'>ここ</a>をクリックしてください。",
-	"CREATIVE_URL_DESCRIPTION": "または、Creative Cloud 共有リンクにペーストしてサインインせずに PSD を開きます。<a href='{HELP_SHARED_LINK_URL}'>Creative Cloud 共有リンクに関する詳細情報。</a>",
-	"RESOLVING_CREATIVE_URL": "「{0}」を解決中\u2026",
 
 	"UNSUPPORTED_BLEND_MODES": "サポートされていない描画モードが含まれています。レンダリング結果が異なる場合があります。",
 

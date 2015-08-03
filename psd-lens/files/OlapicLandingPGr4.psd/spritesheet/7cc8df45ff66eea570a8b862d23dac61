@@ -1,0 +1,954 @@
+--Boundary_14381847871510.2191841017920524
+Content-Type: application/vnd.adobe.image-operation+json
+Content-ID: <f91995f0-3608-11e5-ac03-0f4330168279@adobe.com>
+
+{"inputs":{"image":{"href":"/files/OlapicLandingPGr4.psd"}},"outputs":{"spriteinfo":{"href":"cid:f91995f1-3608-11e5-ac03-0f4330168279@adobe.com"},"sheet1":{"location":"/temp/SpritesheetResult-XTRACT-abd9fbff-6de4-42e1-f789-c2038ac8af7d/SpriteSheet-1.png"},"sheet2":{"location":"/temp/SpritesheetResult-XTRACT-abd9fbff-6de4-42e1-f789-c2038ac8af7d/SpriteSheet-2.png"},"sheet3":{"location":"/temp/SpritesheetResult-XTRACT-abd9fbff-6de4-42e1-f789-c2038ac8af7d/SpriteSheet-3.png"},"sheet4":{"location":"/temp/SpritesheetResult-XTRACT-abd9fbff-6de4-42e1-f789-c2038ac8af7d/SpriteSheet-4.png"},"sheet5":{"location":"/temp/SpritesheetResult-XTRACT-abd9fbff-6de4-42e1-f789-c2038ac8af7d/SpriteSheet-5.png"}},"options":{"includeDrawable":false,"minSheets":6,"clipLayers":true,"flattenLayers":true}}
+--Boundary_14381847871510.2191841017920524
+Content-Type: application/vnd.adobe.image-operation+json
+Content-ID: <f91995f1-3608-11e5-ac03-0f4330168279@adobe.com>
+
+{
+	"layers": [
+		{
+			"layerId": 3,
+			"spriteSheet": {
+				"sheetID": 1,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 2037,
+					"right": 1990
+				}
+			}
+		},
+		{
+			"layerId": 50,
+			"spriteSheet": {
+				"color": {
+					"red": 255,
+					"green": 255,
+					"blue": 255
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 84,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 95,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 85,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 86,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 87,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 88,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 93,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 94,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 96,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 97,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 98,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 99,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 100,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 101,
+			"spriteSheet": {
+				"color": {
+					"red": 177,
+					"green": 177,
+					"blue": 177
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 102,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 264,
+					"left": 900,
+					"bottom": 424,
+					"right": 1101
+				}
+			}
+		},
+		{
+			"layerId": 105,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 614,
+					"right": 614
+				}
+			}
+		},
+		{
+			"layerId": 213,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 614,
+					"right": 614
+				}
+			}
+		},
+		{
+			"layerId": 106,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 614,
+					"right": 614
+				}
+			}
+		},
+		{
+			"layerId": 217,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 614,
+					"right": 614
+				}
+			}
+		},
+		{
+			"layerId": 107,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 861,
+					"left": 858,
+					"bottom": 1147,
+					"right": 1144
+				}
+			}
+		},
+		{
+			"layerId": 214,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 614,
+					"left": 0,
+					"bottom": 900,
+					"right": 286
+				}
+			}
+		},
+		{
+			"layerId": 108,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 0,
+					"left": 614,
+					"bottom": 287,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 218,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 287,
+					"left": 614,
+					"bottom": 574,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 109,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 614,
+					"left": 286,
+					"bottom": 900,
+					"right": 572
+				}
+			}
+		},
+		{
+			"layerId": 215,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 614,
+					"left": 572,
+					"bottom": 900,
+					"right": 858
+				}
+			}
+		},
+		{
+			"layerId": 110,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 574,
+					"left": 798,
+					"bottom": 861,
+					"right": 1084
+				}
+			}
+		},
+		{
+			"layerId": 221,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 614,
+					"bottom": 286,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 111,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 286,
+					"left": 614,
+					"bottom": 572,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 219,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 572,
+					"left": 858,
+					"bottom": 858,
+					"right": 1144
+				}
+			}
+		},
+		{
+			"layerId": 112,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 861,
+					"left": 798,
+					"bottom": 1148,
+					"right": 1084
+				}
+			}
+		},
+		{
+			"layerId": 227,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 0,
+					"left": 614,
+					"bottom": 287,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 113,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 287,
+					"left": 614,
+					"bottom": 574,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 226,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 574,
+					"left": 614,
+					"bottom": 861,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 114,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 858,
+					"left": 858,
+					"bottom": 1144,
+					"right": 1144
+				}
+			}
+		},
+		{
+			"layerId": 224,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 614,
+					"left": 0,
+					"bottom": 900,
+					"right": 286
+				}
+			}
+		},
+		{
+			"layerId": 115,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 614,
+					"left": 0,
+					"bottom": 901,
+					"right": 286
+				}
+			}
+		},
+		{
+			"layerId": 220,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 614,
+					"left": 286,
+					"bottom": 901,
+					"right": 572
+				}
+			}
+		},
+		{
+			"layerId": 116,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 614,
+					"left": 286,
+					"bottom": 900,
+					"right": 572
+				}
+			}
+		},
+		{
+			"layerId": 228,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 614,
+					"left": 572,
+					"bottom": 900,
+					"right": 858
+				}
+			}
+		},
+		{
+			"layerId": 117,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 861,
+					"left": 572,
+					"bottom": 1148,
+					"right": 858
+				}
+			}
+		},
+		{
+			"layerId": 223,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 0,
+					"left": 614,
+					"bottom": 286,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 118,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 286,
+					"left": 614,
+					"bottom": 572,
+					"right": 900
+				}
+			}
+		},
+		{
+			"layerId": 222,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 572,
+					"left": 858,
+					"bottom": 858,
+					"right": 1144
+				}
+			}
+		},
+		{
+			"layerId": 119,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 901,
+					"left": 311,
+					"bottom": 1061,
+					"right": 512
+				}
+			}
+		},
+		{
+			"layerId": 65,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 968,
+					"left": 0,
+					"bottom": 1045,
+					"right": 285
+				}
+			}
+		},
+		{
+			"layerId": 67,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 492,
+					"left": 1001,
+					"bottom": 543,
+					"right": 1051
+				}
+			}
+		},
+		{
+			"layerId": 68,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 591,
+					"left": 741,
+					"bottom": 601,
+					"right": 796
+				}
+			}
+		},
+		{
+			"layerId": 69,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1161,
+					"left": 596,
+					"bottom": 1171,
+					"right": 662
+				}
+			}
+		},
+		{
+			"layerId": 70,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 424,
+					"left": 900,
+					"bottom": 475,
+					"right": 1021
+				}
+			}
+		},
+		{
+			"layerId": 71,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1169,
+					"left": 311,
+					"bottom": 1172,
+					"right": 596
+				}
+			}
+		},
+		{
+			"layerId": 72,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 424,
+					"left": 1021,
+					"bottom": 455,
+					"right": 1119
+				}
+			}
+		},
+		{
+			"layerId": 74,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 492,
+					"left": 900,
+					"bottom": 522,
+					"right": 1001
+				}
+			}
+		},
+		{
+			"layerId": 75,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1129,
+					"left": 692,
+					"bottom": 1141,
+					"right": 767
+				}
+			}
+		},
+		{
+			"layerId": 76,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 522,
+					"left": 900,
+					"bottom": 552,
+					"right": 1001
+				}
+			}
+		},
+		{
+			"layerId": 77,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 0,
+					"left": 900,
+					"bottom": 160,
+					"right": 1062
+				}
+			}
+		},
+		{
+			"layerId": 78,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 0,
+					"left": 900,
+					"bottom": 160,
+					"right": 1086
+				}
+			}
+		},
+		{
+			"layerId": 134,
+			"spriteSheet": {
+				"color": {
+					"red": 245,
+					"green": 230,
+					"blue": 209
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 148,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 614,
+					"left": 0,
+					"bottom": 1060,
+					"right": 798
+				}
+			}
+		},
+		{
+			"layerId": 135,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1060,
+					"left": 0,
+					"bottom": 1115,
+					"right": 457
+				}
+			}
+		},
+		{
+			"layerId": 136,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1129,
+					"left": 311,
+					"bottom": 1161,
+					"right": 692
+				}
+			}
+		},
+		{
+			"layerId": 143,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 900,
+					"left": 0,
+					"bottom": 968,
+					"right": 416
+				}
+			}
+		},
+		{
+			"layerId": 144,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 475,
+					"left": 900,
+					"bottom": 492,
+					"right": 1104
+				}
+			}
+		},
+		{
+			"layerId": 146,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 210,
+					"left": 900,
+					"bottom": 249,
+					"right": 1140
+				}
+			}
+		},
+		{
+			"layerId": 145
+		},
+		{
+			"layerId": 137,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1060,
+					"left": 457,
+					"bottom": 1129,
+					"right": 782
+				}
+			}
+		},
+		{
+			"layerId": 138,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 249,
+					"left": 900,
+					"bottom": 264,
+					"right": 1101
+				}
+			}
+		},
+		{
+			"layerId": 152,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 160,
+					"left": 900,
+					"bottom": 210,
+					"right": 1140
+				}
+			}
+		},
+		{
+			"layerId": 163,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1115,
+					"left": 0,
+					"bottom": 1172,
+					"right": 311
+				}
+			}
+		},
+		{
+			"layerId": 208,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 901,
+					"left": 0,
+					"bottom": 958,
+					"right": 311
+				}
+			}
+		},
+		{
+			"layerId": 209,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 958,
+					"left": 0,
+					"bottom": 1015,
+					"right": 311
+				}
+			}
+		},
+		{
+			"layerId": 211,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 1015,
+					"left": 0,
+					"bottom": 1072,
+					"right": 311
+				}
+			}
+		},
+		{
+			"layerId": 210,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 1072,
+					"left": 0,
+					"bottom": 1129,
+					"right": 311
+				}
+			}
+		},
+		{
+			"layerId": 140,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1115,
+					"left": 311,
+					"bottom": 1128,
+					"right": 435
+				}
+			}
+		},
+		{
+			"layerId": 160,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 591,
+					"left": 614,
+					"bottom": 608,
+					"right": 741
+				}
+			}
+		},
+		{
+			"layerId": 167,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 574,
+					"left": 614,
+					"bottom": 591,
+					"right": 790
+				}
+			}
+		},
+		{
+			"layerId": 207,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1148,
+					"left": 692,
+					"bottom": 1168,
+					"right": 902
+				}
+			}
+		},
+		{
+			"layerId": 161,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1148,
+					"left": 902,
+					"bottom": 1165,
+					"right": 1121
+				}
+			}
+		},
+		{
+			"layerId": 202,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 1161,
+					"left": 311,
+					"bottom": 1169,
+					"right": 551
+				}
+			}
+		}
+	],
+	"version": "1.1.2",
+	"info": {
+		"version": "1.1.2",
+		"totalSheets": 5
+	}
+}
+--Boundary_14381847871510.2191841017920524--

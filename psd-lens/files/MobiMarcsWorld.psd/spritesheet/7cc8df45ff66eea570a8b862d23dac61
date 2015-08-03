@@ -1,0 +1,380 @@
+--Boundary_14381847469800.7770335066597909
+Content-Type: application/vnd.adobe.image-operation+json
+Content-ID: <e127fa40-3608-11e5-ac03-0f4330168279@adobe.com>
+
+{"inputs":{"image":{"href":"/files/MobiMarcsWorld.psd"}},"outputs":{"spriteinfo":{"href":"cid:e1282150-3608-11e5-ac03-0f4330168279@adobe.com"},"sheet1":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-1.png"},"sheet2":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-2.png"},"sheet3":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-3.png"},"sheet4":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-4.png"},"sheet5":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-5.png"},"sheet6":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-6.png"},"sheet7":{"location":"/temp/SpritesheetResult-XTRACT-aef6c2b4-975f-4325-bbe2-286b9167b7fa/SpriteSheet-7.png"}},"options":{"includeDrawable":false,"minSheets":6,"clipLayers":true,"flattenLayers":true}}
+--Boundary_14381847469800.7770335066597909
+Content-Type: application/vnd.adobe.image-operation+json
+Content-ID: <e1282150-3608-11e5-ac03-0f4330168279@adobe.com>
+
+{
+	"layers": [
+		{
+			"layerId": 2,
+			"spriteSheet": {
+				"sheetID": 2,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 728,
+					"right": 640
+				}
+			}
+		},
+		{
+			"layerId": 98,
+			"spriteSheet": {
+				"sheetID": 6,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 105,
+					"right": 640
+				}
+			}
+		},
+		{
+			"layerId": 3,
+			"spriteSheet": {
+				"sheetID": 1,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 912,
+					"right": 640
+				}
+			}
+		},
+		{
+			"layerId": 169,
+			"spriteSheet": {
+				"color": {
+					"red": 255,
+					"green": 255,
+					"blue": 255
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 22,
+			"spriteSheet": {
+				"color": {
+					"red": 245,
+					"green": 245,
+					"blue": 245
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 170,
+			"spriteSheet": {
+				"color": {
+					"red": 92,
+					"green": 92,
+					"blue": 92
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 195,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 284,
+					"right": 607
+				}
+			}
+		},
+		{
+			"layerId": 196,
+			"spriteSheet": {
+				"sheetID": 6,
+				"bounds": {
+					"top": 105,
+					"left": 0,
+					"bottom": 235,
+					"right": 515
+				}
+			}
+		},
+		{
+			"layerId": 64
+		},
+		{
+			"layerId": 175,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 284,
+					"left": 0,
+					"bottom": 544,
+					"right": 261
+				}
+			}
+		},
+		{
+			"layerId": 210,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 284,
+					"left": 261,
+					"bottom": 544,
+					"right": 522
+				}
+			}
+		},
+		{
+			"layerId": 176,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 261,
+					"bottom": 260,
+					"right": 521
+				}
+			}
+		},
+		{
+			"layerId": 211,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 260,
+					"left": 0,
+					"bottom": 520,
+					"right": 260
+				}
+			}
+		},
+		{
+			"layerId": 205,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 284,
+					"left": 0,
+					"bottom": 544,
+					"right": 261
+				}
+			}
+		},
+		{
+			"layerId": 212,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 260,
+					"left": 260,
+					"bottom": 520,
+					"right": 520
+				}
+			}
+		},
+		{
+			"layerId": 206,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 261,
+					"bottom": 260,
+					"right": 521
+				}
+			}
+		},
+		{
+			"layerId": 213,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 260,
+					"right": 260
+				}
+			}
+		},
+		{
+			"layerId": 208,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 284,
+					"left": 0,
+					"bottom": 544,
+					"right": 261
+				}
+			}
+		},
+		{
+			"layerId": 214,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 260,
+					"right": 261
+				}
+			}
+		},
+		{
+			"layerId": 209,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 261,
+					"bottom": 260,
+					"right": 521
+				}
+			}
+		},
+		{
+			"layerId": 215,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 260,
+					"left": 0,
+					"bottom": 520,
+					"right": 260
+				}
+			}
+		},
+		{
+			"layerId": 180,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 284,
+					"left": 0,
+					"bottom": 544,
+					"right": 261
+				}
+			}
+		},
+		{
+			"layerId": 216,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 260,
+					"left": 260,
+					"bottom": 518,
+					"right": 521
+				}
+			}
+		},
+		{
+			"layerId": 181,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 0,
+					"left": 261,
+					"bottom": 260,
+					"right": 521
+				}
+			}
+		},
+		{
+			"layerId": 217,
+			"spriteSheet": {
+				"sheetID": 5,
+				"bounds": {
+					"top": 0,
+					"left": 260,
+					"bottom": 260,
+					"right": 520
+				}
+			}
+		},
+		{
+			"layerId": 23,
+			"spriteSheet": {
+				"sheetID": 4,
+				"bounds": {
+					"top": 520,
+					"left": 0,
+					"bottom": 545,
+					"right": 261
+				}
+			}
+		},
+		{
+			"layerId": 200,
+			"spriteSheet": {
+				"color": {
+					"red": 218,
+					"green": 218,
+					"blue": 218
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 201,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 544,
+					"left": 0,
+					"bottom": 569,
+					"right": 352
+				}
+			}
+		},
+		{
+			"layerId": 203,
+			"spriteSheet": {
+				"color": {
+					"red": 245,
+					"green": 245,
+					"blue": 245
+				},
+				"opacity": 255
+			}
+		},
+		{
+			"layerId": 204,
+			"spriteSheet": {
+				"sheetID": 3,
+				"bounds": {
+					"top": 544,
+					"left": 352,
+					"bottom": 569,
+					"right": 541
+				}
+			}
+		},
+		{
+			"layerId": 174
+		},
+		{
+			"layerId": 194,
+			"spriteSheet": {
+				"sheetID": 7,
+				"bounds": {
+					"top": 0,
+					"left": 0,
+					"bottom": 68,
+					"right": 640
+				}
+			}
+		}
+	],
+	"version": "1.1.2",
+	"info": {
+		"version": "1.1.2",
+		"totalSheets": 7
+	}
+}
+--Boundary_14381847469800.7770335066597909--
