@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
 import cssbeautifier
 
@@ -48,6 +51,45 @@ class CSSBeautifierTest(unittest.TestCase):
         t('.tabs    {    }', '.tabs {}')
         t('.tabs    \n{\n    \n  }', '.tabs {}')
 
+        # 
+        t('#cboxOverlay {\n\tbackground: url(images/overlay.png) repeat 0 0;\n\topacity: 0.9;\n\tfilter: alpha(opacity = 90);\n}', '#cboxOverlay {\n\tbackground: url(images/overlay.png) repeat 0 0;\n\topacity: 0.9;\n\tfilter: alpha(opacity=90);\n}')
+
+        # Selector Separator - (separator = " ", separator1 = " ")
+        self.options.selector_separator_newline = false
+        self.options.selector_separator = " "
+        t('#bla, #foo{color:green}', '#bla, #foo {\n\tcolor: green\n}')
+        t('@media print {.tab{}}', '@media print {\n\t.tab {}\n}')
+        t('@media print {.tab,.bat{}}', '@media print {\n\t.tab, .bat {}\n}')
+        t('#bla, #foo{color:black}', '#bla, #foo {\n\tcolor: black\n}')
+        t('a:first-child,a:first-child{color:red;div:first-child,div:hover{color:black;}}', 'a:first-child, a:first-child {\n\tcolor: red;\n\tdiv:first-child, div:hover {\n\t\tcolor: black;\n\t}\n}')
+
+        # Selector Separator - (separator = " ", separator1 = " ")
+        self.options.selector_separator_newline = false
+        self.options.selector_separator = "  "
+        t('#bla, #foo{color:green}', '#bla, #foo {\n\tcolor: green\n}')
+        t('@media print {.tab{}}', '@media print {\n\t.tab {}\n}')
+        t('@media print {.tab,.bat{}}', '@media print {\n\t.tab, .bat {}\n}')
+        t('#bla, #foo{color:black}', '#bla, #foo {\n\tcolor: black\n}')
+        t('a:first-child,a:first-child{color:red;div:first-child,div:hover{color:black;}}', 'a:first-child, a:first-child {\n\tcolor: red;\n\tdiv:first-child, div:hover {\n\t\tcolor: black;\n\t}\n}')
+
+        # Selector Separator - (separator = "\n", separator1 = "\n\t")
+        self.options.selector_separator_newline = true
+        self.options.selector_separator = " "
+        t('#bla, #foo{color:green}', '#bla,\n#foo {\n\tcolor: green\n}')
+        t('@media print {.tab{}}', '@media print {\n\t.tab {}\n}')
+        t('@media print {.tab,.bat{}}', '@media print {\n\t.tab,\n\t.bat {}\n}')
+        t('#bla, #foo{color:black}', '#bla,\n#foo {\n\tcolor: black\n}')
+        t('a:first-child,a:first-child{color:red;div:first-child,div:hover{color:black;}}', 'a:first-child,\na:first-child {\n\tcolor: red;\n\tdiv:first-child,\n\tdiv:hover {\n\t\tcolor: black;\n\t}\n}')
+
+        # Selector Separator - (separator = "\n", separator1 = "\n\t")
+        self.options.selector_separator_newline = true
+        self.options.selector_separator = "  "
+        t('#bla, #foo{color:green}', '#bla,\n#foo {\n\tcolor: green\n}')
+        t('@media print {.tab{}}', '@media print {\n\t.tab {}\n}')
+        t('@media print {.tab,.bat{}}', '@media print {\n\t.tab,\n\t.bat {}\n}')
+        t('#bla, #foo{color:black}', '#bla,\n#foo {\n\tcolor: black\n}')
+        t('a:first-child,a:first-child{color:red;div:first-child,div:hover{color:black;}}', 'a:first-child,\na:first-child {\n\tcolor: red;\n\tdiv:first-child,\n\tdiv:hover {\n\t\tcolor: black;\n\t}\n}')
+
         # Newline Between Rules - (separator = "\n")
         self.options.newline_between_rules = true
         t('.div {}\n.span {}', '.div {}\n\n.span {}')
@@ -60,6 +102,7 @@ class CSSBeautifierTest(unittest.TestCase):
         t('@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo@2x.png);\n\t}\n\t@font-face {\n\t\tfont-family: "Bitstream Vera Serif Bold";\n\t\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n\t}\n}\n.div{height:15px;}', '@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo@2x.png);\n\t}\n\t@font-face {\n\t\tfont-family: "Bitstream Vera Serif Bold";\n\t\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n\t}\n}\n\n.div {\n\theight: 15px;\n}')
         t('@font-face {\n\tfont-family: "Bitstream Vera Serif Bold";\n\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n}\n@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo.png);\n\t}\n\t@media screen and (min-device-pixel-ratio: 2) {\n\t\t@font-face {\n\t\t\tfont-family: "Helvetica Neue"\n\t\t}\n\t\t#foo:hover {\n\t\t\tbackground-image: url(foo@2x.png);\n\t\t}\n\t}\n}', '@font-face {\n\tfont-family: "Bitstream Vera Serif Bold";\n\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n}\n\n@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo.png);\n\t}\n\t@media screen and (min-device-pixel-ratio: 2) {\n\t\t@font-face {\n\t\t\tfont-family: "Helvetica Neue"\n\t\t}\n\t\t#foo:hover {\n\t\t\tbackground-image: url(foo@2x.png);\n\t\t}\n\t}\n}')
         t('a:first-child{color:red;div:first-child{color:black;}}\n.div{height:15px;}', 'a:first-child {\n\tcolor: red;\n\tdiv:first-child {\n\t\tcolor: black;\n\t}\n}\n\n.div {\n\theight: 15px;\n}')
+        t('a:first-child{color:red;div:not(.peq){color:black;}}\n.div{height:15px;}', 'a:first-child {\n\tcolor: red;\n\tdiv:not(.peq) {\n\t\tcolor: black;\n\t}\n}\n\n.div {\n\theight: 15px;\n}')
 
         # Newline Between Rules - (separator = "")
         self.options.newline_between_rules = false
@@ -73,6 +116,54 @@ class CSSBeautifierTest(unittest.TestCase):
         t('@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo@2x.png);\n\t}\n\t@font-face {\n\t\tfont-family: "Bitstream Vera Serif Bold";\n\t\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n\t}\n}\n.div{height:15px;}', '@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo@2x.png);\n\t}\n\t@font-face {\n\t\tfont-family: "Bitstream Vera Serif Bold";\n\t\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n\t}\n}\n.div {\n\theight: 15px;\n}')
         t('@font-face {\n\tfont-family: "Bitstream Vera Serif Bold";\n\tsrc: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");\n}\n@media screen {\n\t#foo:hover {\n\t\tbackground-image: url(foo.png);\n\t}\n\t@media screen and (min-device-pixel-ratio: 2) {\n\t\t@font-face {\n\t\t\tfont-family: "Helvetica Neue"\n\t\t}\n\t\t#foo:hover {\n\t\t\tbackground-image: url(foo@2x.png);\n\t\t}\n\t}\n}')
         t('a:first-child{color:red;div:first-child{color:black;}}\n.div{height:15px;}', 'a:first-child {\n\tcolor: red;\n\tdiv:first-child {\n\t\tcolor: black;\n\t}\n}\n.div {\n\theight: 15px;\n}')
+        t('a:first-child{color:red;div:not(.peq){color:black;}}\n.div{height:15px;}', 'a:first-child {\n\tcolor: red;\n\tdiv:not(.peq) {\n\t\tcolor: black;\n\t}\n}\n.div {\n\theight: 15px;\n}')
+
+        # Functions braces
+        t('.tabs(){}', '.tabs() {}')
+        t('.tabs (){}', '.tabs () {}')
+        t('.tabs (pa, pa(1,2)), .cols { }', '.tabs (pa, pa(1, 2)),\n.cols {}')
+        t('.tabs(pa, pa(1,2)), .cols { }', '.tabs(pa, pa(1, 2)),\n.cols {}')
+        t('.tabs (   )   {    }', '.tabs () {}')
+        t('.tabs(   )   {    }', '.tabs() {}')
+        t('.tabs  (t, t2)  \n{\n  key: val(p1  ,p2);  \n  }', '.tabs (t, t2) {\n\tkey: val(p1, p2);\n}')
+        t('.box-shadow(@shadow: 0 1px 3px rgba(0, 0, 0, .25)) {\n\t-webkit-box-shadow: @shadow;\n\t-moz-box-shadow: @shadow;\n\tbox-shadow: @shadow;\n}')
+
+        # Comments
+        t('/* test */')
+        t('.tabs{/* test */}', '.tabs {\n\t/* test */\n}')
+        t('.tabs{/* test */}', '.tabs {\n\t/* test */\n}')
+        t('/* header */.tabs {}', '/* header */\n\n.tabs {}')
+        t('.tabs {\n/* non-header */\nwidth:10px;}', '.tabs {\n\t/* non-header */\n\twidth: 10px;\n}')
+        t('/* header')
+        t('// comment')
+        t('.selector1 {\n\tmargin: 0; /* This is a comment including an url http://domain.com/path/to/file.ext */\n}', '.selector1 {\n\tmargin: 0;\n\t/* This is a comment including an url http://domain.com/path/to/file.ext */\n}')
+        
+        # single line comment support (less/sass)
+        t('.tabs{\n// comment\nwidth:10px;\n}', '.tabs {\n\t// comment\n\twidth: 10px;\n}')
+        t('.tabs{// comment\nwidth:10px;\n}', '.tabs {\n\t// comment\n\twidth: 10px;\n}')
+        t('//comment\n.tabs{width:10px;}', '//comment\n.tabs {\n\twidth: 10px;\n}')
+        t('.tabs{//comment\n//2nd single line comment\nwidth:10px;}', '.tabs {\n\t//comment\n\t//2nd single line comment\n\twidth: 10px;\n}')
+        t('.tabs{width:10px;//end of line comment\n}', '.tabs {\n\twidth: 10px; //end of line comment\n}')
+        t('.tabs{width:10px;//end of line comment\nheight:10px;}', '.tabs {\n\twidth: 10px; //end of line comment\n\theight: 10px;\n}')
+        t('.tabs{width:10px;//end of line comment\nheight:10px;//another\n}', '.tabs {\n\twidth: 10px; //end of line comment\n\theight: 10px; //another\n}')
+
+        # Psuedo-classes vs Variables
+        t('@page :first {}')
+        
+        # Assume the colon goes with the @name. If we're in LESS, this is required regardless of the at-string.
+        t('@page:first {}', '@page: first {}')
+        t('@page: first {}')
+
+        # SASS/SCSS
+        
+        # Basic Interpolation
+        t('p {\n\t$font-size: 12px;\n\t$line-height: 30px;\n\tfont: #{$font-size}/#{$line-height};\n}')
+        t('p.#{$name} {}')
+        t(
+            '@mixin itemPropertiesCoverItem($items, $margin) {\n' +
+            '\twidth: calc((100% - ((#{$items} - 1) * #{$margin}rem)) / #{$items});\n' +
+            '\tmargin: 1.6rem #{$margin}rem 1.6rem 0;\n' +
+            '}')
 
         # 
 
@@ -117,30 +208,6 @@ class CSSBeautifierTest(unittest.TestCase):
         t(" \t \na, img {padding: 0.2px}", " \t a,\n \t img {\n \t \tpadding: 0.2px\n \t }")
         t("\n\n     a, img {padding: 0.2px}", "a,\nimg {\n\tpadding: 0.2px\n}")
 
-
-    def testComments(self):
-        self.resetOptions()
-        t = self.decodesto
-
-        t("/* test */", "/* test */")
-        t(".tabs{/* test */}", ".tabs {\n\t/* test */\n}")
-        t("/* header */.tabs {}", "/* header */\n\n.tabs {}")
-        t("/* header", "/* header");
-        t("// comment", "// comment");
-        t(".selector1 {\n\tmargin: 0; /* This is a comment including an url http://domain.com/path/to/file.ext */\n}",
-            ".selector1 {\n\tmargin: 0;\n\t/* This is a comment including an url http://domain.com/path/to/file.ext */\n}")
-
-        #single line comment support (less/sass)
-        t(".tabs{\n// comment\nwidth:10px;\n}", ".tabs {\n\t// comment\n\twidth: 10px;\n}")
-        t(".tabs{// comment\nwidth:10px;\n}", ".tabs {\n\t// comment\n\twidth: 10px;\n}")
-        t("//comment\n.tabs{width:10px;}", "//comment\n.tabs {\n\twidth: 10px;\n}")
-        t(".tabs{//comment\n//2nd single line comment\nwidth:10px;}", ".tabs {\n\t//comment\n\t//2nd single line comment\n\twidth: 10px;\n}")
-        t(".tabs{width:10px;//end of line comment\n}", ".tabs {\n\twidth: 10px; //end of line comment\n}")
-        t(".tabs{width:10px;//end of line comment\nheight:10px;}", ".tabs {\n\twidth: 10px; //end of line comment\n\theight: 10px;\n}")
-        t(".tabs{width:10px;//end of line comment\nheight:10px;//another\n}", ".tabs {\n\twidth: 10px; //end of line comment\n\theight: 10px; //another\n}")
-
-
-
     def testSeperateSelectors(self):
         self.resetOptions()
         t = self.decodesto
@@ -182,11 +249,6 @@ class CSSBeautifierTest(unittest.TestCase):
         self.options.indent_char = ' '
         self.options.selector_separator_newline = False
         t = self.decodesto
-
-        t("#bla, #foo{color:green}", "#bla, #foo {\n  color: green\n}")
-        t("@media print {.tab{}}", "@media print {\n  .tab {}\n}")
-        t("@media print {.tab,.bat{}}", "@media print {\n  .tab, .bat {}\n}")
-        t("#bla, #foo{color:black}", "#bla, #foo {\n  color: black\n}")
 
         # pseudo-classes and pseudo-elements
         t("#foo:hover {\n  background-image: url(foo@2x.png)\n}")
@@ -236,9 +298,6 @@ class CSSBeautifierTest(unittest.TestCase):
         t("a:first-child{color:red;div:first-child{color:black;}}",
             "a:first-child {\n\tcolor: red;\n\tdiv:first-child {\n\t\tcolor: black;\n\t}\n}");
 
-        t("a:first-child,a:first-child{color:red;div:first-child,div:hover{color:black;}}",
-            "a:first-child,\na:first-child {\n\tcolor: red;\n\tdiv:first-child, div:hover {\n\t\tcolor: black;\n\t}\n}");
-
         # handle SASS/LESS parent reference
         t("div{&:first-letter {text-transform: uppercase;}}",
             "div {\n\t&:first-letter {\n\t\ttext-transform: uppercase;\n\t}\n}");
@@ -265,9 +324,19 @@ class CSSBeautifierTest(unittest.TestCase):
 
         # if the expected is different from input, run it again
         # expected output should be unchanged when run twice.
-        if not expectation == None:
+        if not expectation != input:
             self.assertMultiLineEqual(
                 cssbeautifier.beautify(expectation, self.options), expectation)
+
+        # Everywhere we do newlines, they should be replaced with opts.eol
+        self.options.eol = '\r\\n';
+        expectation = expectation.replace('\n', '\r\n')
+        self.assertMultiLineEqual(
+            cssbeautifier.beautify(input, self.options), expectation)
+        input = input.replace('\n', '\r\n')
+        self.assertMultiLineEqual(
+            cssbeautifier.beautify(input, self.options), expectation)
+        self.options.eol = '\n'
 
 if __name__ == '__main__':
     unittest.main()

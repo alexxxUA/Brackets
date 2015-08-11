@@ -50,6 +50,11 @@ define(function (require, exports, module) {
         },
         command = [windowsCommand, macCommand];
 
+    var commandBeautify = Strings.BEAUTIFY;
+    if (typeof(commandBeautify) == 'undefined') {
+      commandBeautify = 'Beautify';
+    }
+
     // Brackets debug mode
     DEBUG_MODE = debugPreferences.get('showErrorsInStatusBar');
 
@@ -218,6 +223,7 @@ define(function (require, exports, module) {
         case 'php':
         case 'xml':
         case 'ejs':
+        case 'handlebars':
             formattedText = _formatHTML(unformattedText, indentChar, indentSize);
             batchUpdate(formattedText, isSelection);
             break;
@@ -282,7 +288,7 @@ define(function (require, exports, module) {
 
     function toggle(command, fromCheckbox) {
         var newValue = (typeof fromCheckbox === 'undefined') ? beautifyOnSave : fromCheckbox;
-        $(DocumentManager)[newValue ? 'on' : 'off']('documentSaved', onSave);
+        DocumentManager[newValue ? 'on' : 'off']('documentSaved', onSave);
         command.setChecked(newValue);
         beautifyPreferences.set('on_save', newValue);
         beautifyPreferences.save();
@@ -291,7 +297,7 @@ define(function (require, exports, module) {
     /**
      * File menu
      */
-    CommandManager.register('Beautify', COMMAND_ID, format);
+    CommandManager.register(commandBeautify, COMMAND_ID, format);
     var commandOnSave = CommandManager.register(Strings.BEAUTIFY_ON_SAVE, COMMAND_SAVE_ID, function () {
         toggle(this, !this.getChecked());
         if (this.getChecked()) {
@@ -302,7 +308,7 @@ define(function (require, exports, module) {
     /**
      * Contextual menu
      */
-    CommandManager.register('Beautify', CONTEXTUAL_COMMAND_ID, format);
+    CommandManager.register(commandBeautify, CONTEXTUAL_COMMAND_ID, format);
     var contextMenu = Menus.getContextMenu(Menus.ContextMenuIds.EDITOR_MENU);
     contextMenu.addMenuItem(CONTEXTUAL_COMMAND_ID);
 
@@ -314,13 +320,13 @@ define(function (require, exports, module) {
 
     AppInit.appReady(function () {
 
-        $(DocumentManager).on('documentRefreshed.beautify', function (e, document) {
+        DocumentManager.on('documentRefreshed.beautify', function (e, document) {
             if (document.file.fullPath === ProjectManager.getProjectRoot().fullPath + settingsFileName) {
                 loadConfig();
             }
         });
 
-        $(ProjectManager).on('projectOpen.beautify', function () {
+        ProjectManager.on('projectOpen.beautify', function () {
             loadConfig();
         });
 
