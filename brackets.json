@@ -199,8 +199,9 @@
             "description": "for in",
             "tag": "VanillaJS",
             "tagHide": true,
-            "text": "for (${1:prop} in ${2:obj}) {\n  if (${2:obj}.hasOwnProperty(${1:prop})) {\n    ${3}\n  }\n}",
-            "source": "system"
+            "text": "for (var ${1:prop} in ${2:obj}) {\n  if (${2:obj}.hasOwnProperty(${1:prop})) {\n    ${3}\n  }\n}",
+            "source": "system",
+            "mTime": 1439374189324
         },
         {
             "trigger": "fn",
@@ -270,5 +271,6 @@
     "useTabChar": true,
     "tabSize": 4,
     "denniskehrig.ShowWhitespace.checked": true,
-    "fonts.fontSize": "11px"
+    "fonts.fontSize": "11px",
+    "styleActiveLine": false
 }
