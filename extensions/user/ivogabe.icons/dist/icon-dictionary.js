@@ -1,9 +1,9 @@
-define(["require", "exports", './icon', './preset-dictionary', './user-dictionary'], function (require, exports, icon_1, preset_dictionary_1, user_dictionary_1) {
+define(["require", "exports", './preset-dictionary', './user-dictionary'], function (require, exports, preset_dictionary_1, user_dictionary_1) {
     var IconDictionary = (function () {
         function IconDictionary(settings) {
             if (settings === void 0) { settings = {}; }
-            this.color = icon_1.IconSet.ColorLight;
-            this.iconSet = icon_1.IconSet.IconIon;
+            this.color = 0 /* ColorLight */;
+            this.iconSet = 1 /* IconIon */;
             this.secondary = true;
             this.user = new user_dictionary_1.UserDictionary(settings);
         }

@@ -25,8 +25,8 @@ define(["require", "exports", 'module', './icon', './dictionary', './icon-dictio
         icons.iconSet = icon_1.getIconSet(prefs.get('iconset'));
         icons.secondary = prefs.get('secondary');
         commandSecondary.setChecked(icons.secondary);
-        commandThemeIon.setChecked(icons.iconSet === icon_1.IconSet.IconIon);
-        commandThemeDev.setChecked(icons.iconSet === icon_1.IconSet.IconDev);
+        commandThemeIon.setChecked(icons.iconSet === 1 /* IconIon */);
+        commandThemeDev.setChecked(icons.iconSet === 2 /* IconDev */);
     }
     var ExtensionUtils = brackets.getModule('utils/ExtensionUtils');
     var FileTreeView = brackets.getModule('project/FileTreeView');

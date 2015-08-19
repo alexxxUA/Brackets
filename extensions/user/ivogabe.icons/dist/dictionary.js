@@ -1,50 +1,58 @@
 define(["require", "exports"], function (require, exports) {
     function findInDictionary(dictionary, fileName, secondMatch, compare) {
+        fileName = fileName.toLowerCase();
         var match = dictionary.findFullFileName(fileName);
         if (match !== undefined)
             return [match];
         var matches = [];
-        var elements = fileName.split(".");
-        // If the file name starts with a . then we don't want to match on the empty string
-        if (elements[0] === '')
-            elements.shift();
-        var extension = elements[elements.length - 1];
-        var prefix = elements[elements.length - 2];
-        var add = function () {
-            if (match !== undefined && !compare(matches[matches.length - 1], match)) {
-                matches.push(match);
-                if (secondMatch && matches.length === 1)
-                    return false;
-                return true;
-            }
-            return false;
-        };
-        if (secondMatch) {
+        // Start with the longest extension so we match `.foo.bar` before `.bar`.
+        var index = fileName.indexOf('.');
+        while (index !== -1) {
+            var extension = fileName.substring(index + 1);
             match = dictionary.findExtension(extension);
-            if (add())
+            if (!match) {
+                index = fileName.indexOf('.', index + 1);
+                continue;
+            }
+            matches = [match];
+            if (index !== 0) {
+                var prefix = fileName.substring(0, index);
+                match = dictionary.findFileName(prefix, extension);
+                if (match)
+                    matches.push(match);
+            }
+            break;
+        }
+        if (secondMatch) {
+            if (matches.length === 2) {
                 return matches;
-            match = dictionary.findFileName(prefix, extension);
-            if (add())
-                return matches;
+            }
         }
         else {
-            match = dictionary.findFileName(prefix, extension);
-            if (add())
+            if (matches.length === 1) {
                 return matches;
-            match = dictionary.findExtension(extension);
-            if (add())
-                return matches;
+            }
+            else if (matches.length === 2) {
+                return [matches[1]];
+            }
         }
         if (matches.length === 0) {
             matches.push(dictionary.getEmptyItem(fileName));
+            index = fileName.lastIndexOf('.');
         }
-        if (secondMatch && elements.length > 2) {
-            match = dictionary.findExtensionPrefix(prefix);
-            if (add())
-                return matches;
-            match = dictionary.findExtension(prefix);
-            if (add())
-                return matches;
+        var primaryIndex = index;
+        index = fileName.indexOf('.');
+        while (index !== -1 && index < primaryIndex) {
+            var prefix = fileName.substring(index + 1, primaryIndex);
+            match = dictionary.findExtensionPrefix(prefix)
+                || dictionary.findExtension(prefix);
+            if (match) {
+                if (!compare(matches[0], match)) {
+                    matches.push(match);
+                }
+                break;
+            }
+            index = fileName.indexOf('.', index + 1);
         }
         return matches;
     }
