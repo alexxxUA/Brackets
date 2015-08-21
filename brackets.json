@@ -272,5 +272,9 @@
     "tabSize": 4,
     "denniskehrig.ShowWhitespace.checked": true,
     "fonts.fontSize": "11px",
-    "styleActiveLine": false
+    "styleActiveLine": false,
+    "edgewebfonts.ewf-font-history": [
+        "adamina",
+        "nova-mono"
+    ]
 }
