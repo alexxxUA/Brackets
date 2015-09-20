@@ -228,214 +228,221 @@ define(["require", "exports"], function (require, exports) {
             _12[2 /* IconDev */] = 'devicons devicons-python',
             _12
         ));
-        // Qt Quick
-        set('qml', (_13 = {},
-            _13[0 /* ColorLight */] = '#42ed0e',
-            _13[1 /* IconIon */] = 'ion-code',
-            _13[2 /* IconDev */] = 'devicons devicons-code',
+        // Haskell
+        set('hs', (_13 = {},
+            _13[0 /* ColorLight */] = '#c4451d',
+            _13[1 /* IconIon */] = 'ion-android-share-alt file-icon-rotate-90',
+            _13[2 /* IconDev */] = 'devicons devicons-haskell',
             _13
         ));
-        // Shell and friends
-        set('sh', (_14 = {},
-            _14[0 /* ColorLight */] = '#008d00',
-            _14[1 /* IconIon */] = 'ion-android-list',
-            _14[2 /* IconDev */] = 'devicons devicons-terminal',
+        // Qt Quick
+        set('qml', (_14 = {},
+            _14[0 /* ColorLight */] = '#42ed0e',
+            _14[1 /* IconIon */] = 'ion-code',
+            _14[2 /* IconDev */] = 'devicons devicons-code',
             _14
         ));
-        set('bat', (_15 = {},
-            _15[0 /* ColorLight */] = '#60c910',
+        // Shell and friends
+        set('sh', (_15 = {},
+            _15[0 /* ColorLight */] = '#008d00',
             _15[1 /* IconIon */] = 'ion-android-list',
             _15[2 /* IconDev */] = 'devicons devicons-terminal',
             _15
         ));
-        // Applications
-        set('exe', (_16 = {},
-            _16[0 /* ColorLight */] = '#57a084',
-            _16[1 /* IconIon */] = 'ion-social-windows',
-            _16[2 /* IconDev */] = 'devicons devicons-windows',
+        set('bat', (_16 = {},
+            _16[0 /* ColorLight */] = '#60c910',
+            _16[1 /* IconIon */] = 'ion-android-list',
+            _16[2 /* IconDev */] = 'devicons devicons-terminal',
             _16
         ));
-        set('dll', (_17 = {},
-            _17[0 /* ColorLight */] = '#709ead',
+        // Applications
+        set('exe', (_17 = {},
+            _17[0 /* ColorLight */] = '#57a084',
             _17[1 /* IconIon */] = 'ion-social-windows',
             _17[2 /* IconDev */] = 'devicons devicons-windows',
             _17
         ));
-        // Templating
-        set('jade', (_18 = {},
-            _18[0 /* ColorLight */] = '#00a57a',
-            _18[1 /* IconIon */] = 'ion-egg',
+        set('dll', (_18 = {},
+            _18[0 /* ColorLight */] = '#709ead',
+            _18[1 /* IconIon */] = 'ion-social-windows',
+            _18[2 /* IconDev */] = 'devicons devicons-windows',
             _18
         ));
-        // Images
-        set('png', (_19 = {},
-            _19[0 /* ColorLight */] = '#dbb1a9',
-            _19[1 /* IconIon */] = 'ion-image',
-            _19[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
+        // Templating
+        set('jade', (_19 = {},
+            _19[0 /* ColorLight */] = '#00a57a',
+            _19[1 /* IconIon */] = 'ion-egg',
             _19
         ));
-        set(['jpeg', 'jpg'], (_20 = {},
-            _20[0 /* ColorLight */] = '#dedfa3',
+        // Images
+        set('png', (_20 = {},
+            _20[0 /* ColorLight */] = '#dbb1a9',
             _20[1 /* IconIon */] = 'ion-image',
             _20[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _20
         ));
-        set('tiff', (_21 = {},
-            _21[0 /* ColorLight */] = '#ff4000',
+        set(['jpeg', 'jpg'], (_21 = {},
+            _21[0 /* ColorLight */] = '#dedfa3',
             _21[1 /* IconIon */] = 'ion-image',
             _21[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _21
         ));
-        set('ico', (_22 = {},
-            _22[0 /* ColorLight */] = '#b6d2d1',
+        set('tiff', (_22 = {},
+            _22[0 /* ColorLight */] = '#ff4000',
             _22[1 /* IconIon */] = 'ion-image',
             _22[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _22
         ));
-        set('svg', (_23 = {},
-            _23[0 /* ColorLight */] = '#c0c5eb',
+        set('ico', (_23 = {},
+            _23[0 /* ColorLight */] = '#b6d2d1',
             _23[1 /* IconIon */] = 'ion-image',
             _23[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _23
         ));
-        set('gif', (_24 = {},
-            _24[0 /* ColorLight */] = '#aaecc0',
-            _24[1 /* IconIon */] = 'ion-images',
+        set('svg', (_24 = {},
+            _24[0 /* ColorLight */] = '#c0c5eb',
+            _24[1 /* IconIon */] = 'ion-image',
             _24[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _24
         ));
-        // Videos
-        set(['mp4', 'webm', 'ogg'], (_25 = {},
-            _25[0 /* ColorLight */] = '#008d00',
-            _25[1 /* IconIon */] = 'ion-ios-videocam',
+        set('gif', (_25 = {},
+            _25[0 /* ColorLight */] = '#aaecc0',
+            _25[1 /* IconIon */] = 'ion-images',
             _25[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _25
         ));
-        // Audio
-        set(['mp3', 'wav'], (_26 = {},
-            _26[0 /* ColorLight */] = '#921100',
-            _26[1 /* IconIon */] = 'ion-volume-medium',
+        // Videos
+        set(['mp4', 'webm', 'ogg'], (_26 = {},
+            _26[0 /* ColorLight */] = '#008d00',
+            _26[1 /* IconIon */] = 'ion-ios-videocam',
             _26[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _26
         ));
-        // Fonts
-        set('ttf', (_27 = {},
-            _27[0 /* ColorLight */] = '#b42950',
-            _27[1 /* IconIon */] = 'ion-social-tumblr',
+        // Audio
+        set(['mp3', 'wav'], (_27 = {},
+            _27[0 /* ColorLight */] = '#921100',
+            _27[1 /* IconIon */] = 'ion-volume-medium',
+            _27[2 /* IconDev */] = 'devicons devicons-html5_multimedia',
             _27
         ));
-        set('eot', (_28 = {},
-            _28[0 /* ColorLight */] = '#b36908',
+        // Fonts
+        set('ttf', (_28 = {},
+            _28[0 /* ColorLight */] = '#b42950',
             _28[1 /* IconIon */] = 'ion-social-tumblr',
             _28
         ));
-        set(['woff', 'woff2'], (_29 = {},
-            _29[0 /* ColorLight */] = '#7f4bb2',
+        set('eot', (_29 = {},
+            _29[0 /* ColorLight */] = '#b36908',
             _29[1 /* IconIon */] = 'ion-social-tumblr',
             _29
         ));
-        set('otf', (_30 = {},
+        set(['woff', 'woff2'], (_30 = {},
             _30[0 /* ColorLight */] = '#7f4bb2',
             _30[1 /* IconIon */] = 'ion-social-tumblr',
             _30
         ));
-        // Readme
-        set(['md', 'markdown'], (_31 = {},
-            _31[0 /* ColorLight */] = '#b94700',
-            _31[1 /* IconIon */] = ['ion-social-markdown', 12],
-            _31[2 /* IconDev */] = 'devicons devicons-markdown',
+        set('otf', (_31 = {},
+            _31[0 /* ColorLight */] = '#7f4bb2',
+            _31[1 /* IconIon */] = 'ion-social-tumblr',
             _31
         ));
-        // Git
-        set('gitignore', (_32 = {},
-            _32[0 /* ColorLight */] = '#cd5439',
-            _32[1 /* IconIon */] = ['ion-minus-circled', 14],
-            _32[2 /* IconDev */] = 'devicons devicons-git_commit',
+        // Readme
+        set(['md', 'markdown'], (_32 = {},
+            _32[0 /* ColorLight */] = '#b94700',
+            _32[1 /* IconIon */] = ['ion-social-markdown', 12],
+            _32[2 /* IconDev */] = 'devicons devicons-markdown',
             _32
         ));
-        set('gitmodules', (_33 = {},
-            _33[0 /* ColorLight */] = '#f64d27',
-            _33[1 /* IconIon */] = ['ion-fork-repo', 17],
-            _33[2 /* IconDev */] = 'devicons devicons-git_branch',
+        // Git
+        set('gitignore', (_33 = {},
+            _33[0 /* ColorLight */] = '#cd5439',
+            _33[1 /* IconIon */] = ['ion-minus-circled', 14],
+            _33[2 /* IconDev */] = 'devicons devicons-git_commit',
             _33
         ));
-        // Webservers
-        set('htaccess', (_34 = {},
-            _34[0 /* ColorLight */] = '#93a8be',
-            _34[1 /* IconIon */] = ['ion-ios-unlocked', 18],
+        set('gitmodules', (_34 = {},
+            _34[0 /* ColorLight */] = '#f64d27',
+            _34[1 /* IconIon */] = ['ion-fork-repo', 17],
+            _34[2 /* IconDev */] = 'devicons devicons-git_branch',
             _34
         ));
-        set('htpasswd', (_35 = {},
-            _35[0 /* ColorLight */] = '#6c369c',
-            _35[1 /* IconIon */] = ['ion-ios-locked', 18],
+        // Webservers
+        set('htaccess', (_35 = {},
+            _35[0 /* ColorLight */] = '#93a8be',
+            _35[1 /* IconIon */] = ['ion-ios-unlocked', 18],
             _35
         ));
-        set('conf', (_36 = {},
-            _36[0 /* ColorLight */] = '#009900',
-            _36[1 /* IconIon */] = 'ion-ios-gear',
-            _36[2 /* IconDev */] = 'devicons devicons-aptana',
+        set('htpasswd', (_36 = {},
+            _36[0 /* ColorLight */] = '#6c369c',
+            _36[1 /* IconIon */] = ['ion-ios-locked', 18],
             _36
         ));
-        // Archive
-        set('zip', (_37 = {},
-            _37[0 /* ColorLight */] = '#008858',
-            _37[1 /* IconIon */] = 'ion-briefcase',
-            _37[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
+        set('conf', (_37 = {},
+            _37[0 /* ColorLight */] = '#009900',
+            _37[1 /* IconIon */] = 'ion-ios-gear',
+            _37[2 /* IconDev */] = 'devicons devicons-aptana',
             _37
         ));
-        set('rar', (_38 = {},
-            _38[0 /* ColorLight */] = '#005888',
+        // Archive
+        set('zip', (_38 = {},
+            _38[0 /* ColorLight */] = '#008858',
             _38[1 /* IconIon */] = 'ion-briefcase',
             _38[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _38
         ));
-        set('7z', (_39 = {},
-            _39[0 /* ColorLight */] = '#880058',
+        set('rar', (_39 = {},
+            _39[0 /* ColorLight */] = '#005888',
             _39[1 /* IconIon */] = 'ion-briefcase',
             _39[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _39
         ));
-        set('tgz', (_40 = {},
-            _40[0 /* ColorLight */] = '#7900bc',
+        set('7z', (_40 = {},
+            _40[0 /* ColorLight */] = '#880058',
             _40[1 /* IconIon */] = 'ion-briefcase',
             _40[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _40
         ));
-        set('tar', (_41 = {},
-            _41[0 /* ColorLight */] = '#885800',
+        set('tgz', (_41 = {},
+            _41[0 /* ColorLight */] = '#7900bc',
             _41[1 /* IconIon */] = 'ion-briefcase',
             _41[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _41
         ));
-        set('gz', (_42 = {},
-            _42[0 /* ColorLight */] = '#588800',
+        set('tar', (_42 = {},
+            _42[0 /* ColorLight */] = '#885800',
             _42[1 /* IconIon */] = 'ion-briefcase',
             _42[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _42
         ));
-        set('bzip', (_43 = {},
-            _43[0 /* ColorLight */] = '#884300',
+        set('gz', (_43 = {},
+            _43[0 /* ColorLight */] = '#588800',
             _43[1 /* IconIon */] = 'ion-briefcase',
             _43[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _43
         ));
-        set('msi', (_44 = {},
-            _44[0 /* ColorLight */] = '#6f8696',
+        set('bzip', (_44 = {},
+            _44[0 /* ColorLight */] = '#884300',
             _44[1 /* IconIon */] = 'ion-briefcase',
             _44[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _44
         ));
-        set('dmg', (_45 = {},
+        set('msi', (_45 = {},
             _45[0 /* ColorLight */] = '#6f8696',
             _45[1 /* IconIon */] = 'ion-briefcase',
             _45[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _45
         ));
-        set('xpi', (_46 = {},
-            _46[0 /* ColorLight */] = '#5bac0d',
+        set('dmg', (_46 = {},
+            _46[0 /* ColorLight */] = '#6f8696',
             _46[1 /* IconIon */] = 'ion-briefcase',
             _46[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
             _46
+        ));
+        set('xpi', (_47 = {},
+            _47[0 /* ColorLight */] = '#5bac0d',
+            _47[1 /* IconIon */] = 'ion-briefcase',
+            _47[2 /* IconDev */] = ['devicons devicons-netbeans', 17],
+            _47
         ));
         // Settings
         set([
@@ -454,134 +461,139 @@ define(["require", "exports"], function (require, exports) {
             'pro',
             'editorconfig',
             'iml'
-        ], (_47 = {},
-            _47[0 /* ColorLight */] = '#777777',
-            _47[1 /* IconIon */] = 'ion-ios-gear',
-            _47[2 /* IconDev */] = 'devicons devicons-aptana',
-            _47
-        ));
-        set('csproj', (_48 = {},
-            _48[0 /* ColorLight */] = '#5bb552',
-            _48[1 /* IconIon */] = ['ion-ios-paper-outline', 18],
+        ], (_48 = {},
+            _48[0 /* ColorLight */] = '#777777',
+            _48[1 /* IconIon */] = 'ion-ios-gear',
             _48[2 /* IconDev */] = 'devicons devicons-aptana',
             _48
         ));
-        set('vbproj', (_49 = {},
-            _49[0 /* ColorLight */] = '#486dae',
+        set('csproj', (_49 = {},
+            _49[0 /* ColorLight */] = '#5bb552',
             _49[1 /* IconIon */] = ['ion-ios-paper-outline', 18],
             _49[2 /* IconDev */] = 'devicons devicons-aptana',
             _49
         ));
-        set('sln', (_50 = {},
-            _50[0 /* ColorLight */] = '#87c5de',
+        set('vbproj', (_50 = {},
+            _50[0 /* ColorLight */] = '#486dae',
             _50[1 /* IconIon */] = ['ion-ios-paper-outline', 18],
             _50[2 /* IconDev */] = 'devicons devicons-aptana',
             _50
         ));
-        // Other text files
-        set('txt', (_51 = {},
-            _51[0 /* ColorLight */] = '#4192c1',
-            _51[1 /* IconIon */] = 'ion-document-text',
+        set('sln', (_51 = {},
+            _51[0 /* ColorLight */] = '#87c5de',
+            _51[1 /* IconIon */] = ['ion-ios-paper-outline', 18],
+            _51[2 /* IconDev */] = 'devicons devicons-aptana',
             _51
         ));
-        set('log', (_52 = {},
-            _52[0 /* ColorLight */] = '#225dc9',
-            _52[1 /* IconIon */] = 'ion-clipboard',
+        // Other text files
+        set('txt', (_52 = {},
+            _52[0 /* ColorLight */] = '#4192c1',
+            _52[1 /* IconIon */] = 'ion-document-text',
             _52
         ));
-        set('npmignore', (_53 = {},
-            _53[0 /* ColorLight */] = '#cb3837',
-            _53[1 /* IconIon */] = ['ion-minus-circled', 14],
-            _53[2 /* IconDev */] = 'devicons devicons-npm',
+        set('log', (_53 = {},
+            _53[0 /* ColorLight */] = '#225dc9',
+            _53[1 /* IconIon */] = 'ion-clipboard',
             _53
         ));
-        set('slugignore', (_54 = {},
-            _54[0 /* ColorLight */] = '#0da064',
+        set('npmignore', (_54 = {},
+            _54[0 /* ColorLight */] = '#cb3837',
             _54[1 /* IconIon */] = ['ion-minus-circled', 14],
+            _54[2 /* IconDev */] = 'devicons devicons-npm',
             _54
         ));
-        set('dockerignore', (_55 = {},
-            _55[0 /* ColorLight */] = '#0296C9',
+        set('slugignore', (_55 = {},
+            _55[0 /* ColorLight */] = '#0da064',
             _55[1 /* IconIon */] = ['ion-minus-circled', 14],
             _55
         ));
-        set('jpmignore', (_56 = {},
-            _56[0 /* ColorLight */] = '#5bac0d',
+        set('dockerignore', (_56 = {},
+            _56[0 /* ColorLight */] = '#0296C9',
             _56[1 /* IconIon */] = ['ion-minus-circled', 14],
             _56
         ));
-        set(['yml', 'yaml'], (_57 = {},
-            _57[0 /* ColorLight */] = '#008000',
-            _57[1 /* IconIon */] = ['ion-navicon', 14],
+        set('jpmignore', (_57 = {},
+            _57[0 /* ColorLight */] = '#5bac0d',
+            _57[1 /* IconIon */] = ['ion-minus-circled', 14],
             _57
         ));
-        set('sqf', (_58 = {},
-            _58[0 /* ColorLight */] = '#b9e11f',
-            _58[1 /* IconIon */] = 'ion-wand',
+        set(['yml', 'yaml'], (_58 = {},
+            _58[0 /* ColorLight */] = '#008000',
+            _58[1 /* IconIon */] = ['ion-navicon', 14],
             _58
         ));
-        // LaTeX
-        set(['tex', 'bib', 'sty'], (_59 = {},
-            _59[0 /* ColorLight */] = '#262686',
-            _59[1 /* IconIon */] = 'ion-document-text',
+        set('sqf', (_59 = {},
+            _59[0 /* ColorLight */] = '#b9e11f',
+            _59[1 /* IconIon */] = 'ion-wand',
             _59
         ));
-        //Singular Types
-        set('applescript', (_60 = {},
-            _60[0 /* ColorLight */] = '#afafaf',
-            _60[1 /* IconIon */] = 'ion-social-apple',
-            _60[2 /* IconDev */] = 'devicons devicons-apple',
+        set(['csv', 'tsv'], (_60 = {},
+            _60[0 /* ColorLight */] = '#217346',
+            _60[1 /* IconIon */] = 'ion-grid',
             _60
         ));
-        set('textile', (_61 = {},
-            _61[0 /* ColorLight */] = '#6f8696',
-            _61[1 /* IconIon */] = 'ion-quote',
+        // LaTeX
+        set(['tex', 'bib', 'sty'], (_61 = {},
+            _61[0 /* ColorLight */] = '#262686',
+            _61[1 /* IconIon */] = 'ion-document-text',
             _61
         ));
-        set('matlab', (_62 = {},
-            _62[0 /* ColorLight */] = '#014495',
-            _62[1 /* IconIon */] = 'ion-clipboard',
+        //Singular Types
+        set('applescript', (_62 = {},
+            _62[0 /* ColorLight */] = '#afafaf',
+            _62[1 /* IconIon */] = 'ion-social-apple',
+            _62[2 /* IconDev */] = 'devicons devicons-apple',
             _62
         ));
-        set('lisp', (_63 = {},
-            _63[0 /* ColorLight */] = '#f8c63d',
-            _63[1 /* IconIon */] = 'ion-ios-paperplane',
+        set('textile', (_63 = {},
+            _63[0 /* ColorLight */] = '#6f8696',
+            _63[1 /* IconIon */] = 'ion-quote',
             _63
         ));
-        set('xsl', (_64 = {},
-            _64[0 /* ColorLight */] = '#68217a',
-            _64[1 /* IconIon */] = 'ion-code',
-            _64[2 /* IconDev */] = 'devicons devicons-code',
+        set('matlab', (_64 = {},
+            _64[0 /* ColorLight */] = '#014495',
+            _64[1 /* IconIon */] = 'ion-clipboard',
             _64
         ));
-        set('tcl', (_65 = {},
-            _65[0 /* ColorLight */] = '#c3b15f',
-            _65[1 /* IconIon */] = 'ion-code',
-            _65[2 /* IconDev */] = 'devicons devicons-code',
+        set('lisp', (_65 = {},
+            _65[0 /* ColorLight */] = '#f8c63d',
+            _65[1 /* IconIon */] = 'ion-ios-paperplane',
             _65
         ));
-        set('rst', (_66 = {},
-            _66[0 /* ColorLight */] = '#6f8696',
-            _66[1 /* IconIon */] = 'ion-ios-paper',
-            _66[2 /* IconDev */] = ['devicons devicons-rust', 18],
+        set('xsl', (_66 = {},
+            _66[0 /* ColorLight */] = '#68217a',
+            _66[1 /* IconIon */] = 'ion-code',
+            _66[2 /* IconDev */] = 'devicons devicons-code',
             _66
         ));
-        set('d', (_67 = {},
-            _67[0 /* ColorLight */] = '#960000',
-            _67[1 /* IconIon */] = 'ion-contrast',
+        set('tcl', (_67 = {},
+            _67[0 /* ColorLight */] = '#c3b15f',
+            _67[1 /* IconIon */] = 'ion-code',
+            _67[2 /* IconDev */] = 'devicons devicons-code',
             _67
         ));
-        set('r', (_68 = {},
-            _68[0 /* ColorLight */] = '#8495C0',
-            _68[1 /* IconIon */] = 'ion-ios-analytics',
+        set('rst', (_68 = {},
+            _68[0 /* ColorLight */] = '#6f8696',
+            _68[1 /* IconIon */] = 'ion-ios-paper',
+            _68[2 /* IconDev */] = ['devicons devicons-rust', 18],
             _68
         ));
-        set('map', (_69 = {},
-            _69[0 /* ColorLight */] = '#e0591f',
-            _69[1 /* IconIon */] = 'ion-ios-photos-outline',
+        set('d', (_69 = {},
+            _69[0 /* ColorLight */] = '#960000',
+            _69[1 /* IconIon */] = 'ion-contrast',
             _69
         ));
-        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69;
+        set('r', (_70 = {},
+            _70[0 /* ColorLight */] = '#8495C0',
+            _70[1 /* IconIon */] = 'ion-ios-analytics',
+            _70
+        ));
+        set('map', (_71 = {},
+            _71[0 /* ColorLight */] = '#e0591f',
+            _71[1 /* IconIon */] = 'ion-ios-photos-outline',
+            _71
+        ));
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71;
     }
     exports.setExtensions = setExtensions;
     function setPrefixes(set) {
