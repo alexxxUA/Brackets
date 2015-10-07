@@ -1,0 +1,167 @@
+// out: gist-manager.css, compress: true, strictMath: true
+
+// Variables
+@list-width: 200px;
+
+// Button
+#gist-manager-button{
+    background: url( images/icon_gists.svg ) no-repeat center top transparent;
+    &.active{
+        background-position: center bottom;
+    }
+}
+
+// Panel
+#gist-manager {
+    .toolbar {
+        .title {
+            margin-right: 20px;
+        }
+        #filter-content {
+            position: absolute;
+            right: 40px;
+            top: 5px;
+        }
+        .btn-group {
+            input {
+                margin: 0px;
+                width: 100px;
+                border-right: 0;
+                padding-top: 3px;
+                border-radius: 4px 0 0 4px;
+                &:nth-child(2) {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .gist-manager-content {
+        overflow: hidden;
+        .list {
+            float: left;
+            width: @list-width;
+            background-color: #FFFFFF;
+            height: 100%;
+            box-shadow: inset -1px 1px 0px #DDDDDD;
+            overflow-y: auto;
+            .list-group {
+                margin: 0;
+                .list-group-item {
+                    list-style: none;
+                    a {
+                        position: relative;
+                        display: block;
+                        padding: 7px 15px;
+                        margin-bottom: -1px;
+                        border: 1px solid #DDDDDD;
+                        &:hover {
+                            background-color: #F5F5F5;
+                            text-decoration: none;
+                        }
+                        &.active {
+                            color: #FFFFFF;
+                            background-color: #428BCA;
+                            border-color: #428BCA;
+                        }
+                    }
+                }
+            }
+        }
+        .viewer {
+            margin-left: @list-width;
+            padding: 10px;
+            overflow-y: scroll;
+            height: 100%;
+            box-sizing: border-box;
+            .gist {
+                display: none;
+                .gist-overview {
+                    overflow: hidden;
+                    margin-bottom: 8px;
+                    summary {
+                        padding: 0 10px 10px 10px;
+                        .label {
+                            text-transform: capitalize;
+                            margin-right: 10px;
+                            border: 1px solid #d7d7d7;
+                            color: #d7d7d7;
+                            padding: 3px 6px 2px;
+                            border-radius: 3px;
+                            background: #F3F3F3;
+                            &.secret {
+                                border-width: 0px;
+                                background-color: #f8eec7;
+                                color: #A1882B;
+                            }
+                        }
+                    }
+                    .btn-group {
+                        float: right;
+                    }
+                }
+                .file {
+                    margin-bottom: 15px;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 3px;
+                    .meta {
+                        padding: 5px 10px;
+                        font-size: 12px;
+                        text-align: left;
+                        color: #555;
+                        text-shadow: 0 1px 0 #FFFFFF;
+                        border-bottom: 1px solid #D8D8D8;
+                        background-color: #F7F7F7;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                    }
+                    .blob pre{
+                        border-radius: 0;
+                        border: 0;
+                        margin: 0;
+                        code {
+                            -webkit-user-select: initial;
+                            cursor: text;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    &:first-child {
+                        margin-bottom: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dialog
+.new-gist-dialog, .success-gist-dialog {
+
+    .nav {
+        border-bottom: 1px solid #c3c6c5;
+        margin-bottom: 5px;
+        li {
+            padding-bottom: 1px;
+            a:hover {
+                background-color: #ECECEC;
+            }
+        }
+    }
+
+    #prototype-file {
+        display: none;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 7px;
+    }
+
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+    }
+}

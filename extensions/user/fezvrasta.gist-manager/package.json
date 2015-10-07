@@ -1,0 +1,13 @@
+{
+    "name": "fezvrasta.gist-manager",
+    "title": "Gist Manager",
+    "description": "Create and view Github Gists within Brackets. (View > Show Gists Manager)",
+    "keywords": ["gist", "GitHub", "snippets"],
+    "homepage": "https://github.com/FezVrasta/gist-manager",
+    "version": "0.1.1",
+    "author": "Fez Vrasta <info@mywebexpression.com> (http://www.mywebexpression.com)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.24.0"
+    }
+}

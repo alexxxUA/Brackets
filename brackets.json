@@ -276,5 +276,7 @@
     "edgewebfonts.ewf-font-history": [
         "adamina",
         "nova-mono"
-    ]
+    ],
+    "gist-manager.auths": {},
+    "gist-manager.showButton": true
 }
