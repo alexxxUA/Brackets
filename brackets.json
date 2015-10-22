@@ -268,7 +268,7 @@
     "dnbard.documents-toolbar.grayscaleIcons": false,
     "dnbard.documents-toolbar.showCloseButton": true,
     "brackets-icons.iconset": "devicons",
-    "useTabChar": true,
+    "useTabChar": false,
     "tabSize": 4,
     "denniskehrig.ShowWhitespace.checked": true,
     "fonts.fontSize": "11px",
