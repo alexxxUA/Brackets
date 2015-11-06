@@ -278,5 +278,11 @@
         "nova-mono"
     ],
     "gist-manager.auths": {},
-    "gist-manager.showButton": true
+    "gist-manager.showButton": true,
+    "dnbard.projects.favorites": [],
+    "dnbard.projects.filter": [
+        "favorite",
+        "regular"
+    ],
+    "dnbard.projects.customs": []
 }
