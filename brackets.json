@@ -284,5 +284,8 @@
         "favorite",
         "regular"
     ],
-    "dnbard.projects.customs": []
+    "dnbard.projects.customs": [],
+    "language.fileExtensions": {
+        "xspf": "xml"
+    }
 }
