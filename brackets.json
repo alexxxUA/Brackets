@@ -263,7 +263,7 @@
     "dnbard.documents-toolbar.smallIcons": false,
     "dnbard.documents-toolbar.tooltip": false,
     "dnbard.documents-toolbar.close_left": false,
-    "dnbard.documents-toolbar.workingFiles": false,
+    "dnbard.documents-toolbar.workingFiles": true,
     "dnbard.documents-toolbar.brackets_font": true,
     "dnbard.documents-toolbar.grayscaleIcons": false,
     "dnbard.documents-toolbar.showCloseButton": true,
@@ -272,7 +272,7 @@
     "tabSize": 4,
     "denniskehrig.ShowWhitespace.checked": true,
     "fonts.fontSize": "12px",
-    "styleActiveLine": false,
+    "styleActiveLine": true,
     "edgewebfonts.ewf-font-history": [
         "adamina",
         "nova-mono"
@@ -284,5 +284,15 @@
         "favorite",
         "regular"
     ],
-    "dnbard.projects.customs": []
+    "dnbard.projects.customs": [],
+    "funcdocr.autoindent_enter": true,
+    "funcdocr.autoindent_tab": true,
+    "funcdocr.author_auto": false,
+    "funcdocr.atName": "",
+    "language.fileExtensions": {
+        "xspf": "xml"
+    },
+    "hdy.brackets-shell.dark": false,
+    "hdy.brackets-shell.trackProject": true,
+    "hdy.brackets-shell.shell": "cmd.exe"
 }
