@@ -285,6 +285,7 @@
         "regular"
     ],
     "dnbard.projects.customs": [],
+<<<<<<< HEAD
     "funcdocr.autoindent_enter": true,
     "funcdocr.autoindent_tab": true,
     "funcdocr.author_auto": false,
@@ -295,4 +296,9 @@
     "hdy.brackets-shell.dark": false,
     "hdy.brackets-shell.trackProject": true,
     "hdy.brackets-shell.shell": "cmd.exe"
+=======
+    "language.fileExtensions": {
+        "xspf": "xml"
+    }
+>>>>>>> origin/master
 }
