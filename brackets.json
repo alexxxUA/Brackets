@@ -294,5 +294,6 @@
     },
     "hdy.brackets-shell.dark": false,
     "hdy.brackets-shell.trackProject": true,
-    "hdy.brackets-shell.shell": "cmd.exe"
+    "hdy.brackets-shell.shell": "cmd.exe",
+    "wordWrap": false
 }
