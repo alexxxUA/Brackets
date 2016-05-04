@@ -45,8 +45,8 @@
         "node_modules",
         "bower_components",
         ".git",
-        "dist",
-        "vendor"
+        "vendor",
+		".sass-cache"
     ],
     "edc.brackets-snippets.hints": [
         {
