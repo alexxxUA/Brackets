@@ -295,5 +295,6 @@
     "hdy.brackets-shell.dark": false,
     "hdy.brackets-shell.trackProject": true,
     "hdy.brackets-shell.shell": "cmd.exe",
-    "wordWrap": false
+    "wordWrap": false,
+    "martypenner.autosave-files-on-window-blur.enabled": true
 }
