@@ -68,9 +68,6 @@
 	// Default: true
 	"brackets-git.showBashButton": true,
 
-	// Default: true
-	"brackets-git.showReportBugButton": true,
-
 	// Default: false
 	"brackets-git.showTerminalIcon": false,
 
@@ -199,6 +196,24 @@
 	// Change font size; e.g. 13px
 	"fonts.fontSize": "12px",
 
+	// Default: 
+	"funcdocr.atName": "",
+
+	// Default: true
+	"funcdocr.author_auto": true,
+
+	// Default: true
+	"funcdocr.autoindent_enter": true,
+
+	// Default: true
+	"funcdocr.autoindent_tab": true,
+
+	// Default: Ctrl-Alt-D
+	"funcdocr.shortcut": "Ctrl-Alt-D",
+
+	// Default: Ctrl-Shift-D
+	"funcdocr.shortcutMac": "Ctrl-Shift-D",
+
 	// Enable the Health Data Tracking
 	"healthData.healthDataTracking": true,
 
@@ -216,6 +231,9 @@
 
 	// true to not automatically show JS code hints when . is typed
 	"jscodehints.noHintsOnDot": false,
+
+	// Enable/disable datatype details in JavaScript code hints
+	"jscodehints.typedetails": true,
 
 	// An object with the default options for JSLint
 	"jslint.options": {
@@ -336,6 +354,15 @@
 
 	// Maximum code hints displayed at once
 	"maxCodeHints": 50,
+
+	// true to enable code only mode and hide all other UI elements in Brackets
+	"noDistractions": false,
+
+	// true to collapse panes after the last file from the pane is closed via pane header close button
+	"pane.mergePanesWhenLastFileClosed": false,
+
+	// Toggle when to show the close and flip-view buttons on the header.
+	"pane.showPaneHeaderButtons": "hover",
 
 	// false to disable opening preferences file in split view
 	"preferencesView.openPrefsInSplitView": true,
