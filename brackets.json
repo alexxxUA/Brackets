@@ -296,5 +296,9 @@
     "hdy.brackets-shell.trackProject": true,
     "hdy.brackets-shell.shell": "cmd.exe",
     "wordWrap": false,
+<<<<<<< HEAD
     "spaceUnits": 4
+=======
+    "martypenner.autosave-files-on-window-blur.enabled": true
+>>>>>>> origin/master
 }
