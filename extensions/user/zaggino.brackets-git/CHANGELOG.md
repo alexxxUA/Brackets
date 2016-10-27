@@ -2,6 +2,12 @@
 
 **If you get an error right after updating just close all Brackets instances and start again. We are aware of this problem.**
 
+## 0.16.5 (13/05/2016)
+* Fixed an issue with branch name shown as true in an empty repository.
+
+## 0.16.4 (10/05/2016)
+* Stage instead of commits when no commit is present in the repository by [Peeyush Kushwaha](https://github.com/peey)
+
 ## 0.16.3 (07/03/2016)
 * Moved the branch indicator to its own line to prevent overflowing out of the side panel by [José Porto](https://github.com/joseporto)
 

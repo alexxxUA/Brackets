@@ -275,7 +275,7 @@ define(["require", "exports"], function (require, exports) {
             _19
         ));
         // Templating
-        set('jade', (_20 = {},
+        set(['pug', 'jade'], (_20 = {},
             _20[0 /* ColorLight */] = '#00a57a',
             _20[1 /* IconIon */] = 'ion-egg',
             _20
@@ -491,116 +491,128 @@ define(["require", "exports"], function (require, exports) {
             _52[2 /* IconDev */] = 'devicons devicons-aptana',
             _52
         ));
-        // Other text files
-        set('txt', (_53 = {},
-            _53[0 /* ColorLight */] = '#4192c1',
-            _53[1 /* IconIon */] = 'ion-document-text',
+        set([
+            'eslintrc',
+            'eslintrc.js',
+            'eslintrc.yaml',
+            'eslintrc.yml',
+            'eslintrc.json'
+        ], (_53 = {},
+            _53[0 /* ColorLight */] = '#3a33d1',
+            _53[1 /* IconIon */] = 'ion-ios-gear',
+            _53[2 /* IconDev */] = 'devicons devicons-aptana',
             _53
         ));
-        set('log', (_54 = {},
-            _54[0 /* ColorLight */] = '#225dc9',
-            _54[1 /* IconIon */] = 'ion-clipboard',
+        // Other text files
+        set('txt', (_54 = {},
+            _54[0 /* ColorLight */] = '#4192c1',
+            _54[1 /* IconIon */] = 'ion-document-text',
             _54
         ));
-        set('npmignore', (_55 = {},
-            _55[0 /* ColorLight */] = '#cb3837',
-            _55[1 /* IconIon */] = ['ion-minus-circled', 14],
-            _55[2 /* IconDev */] = 'devicons devicons-npm',
+        set('log', (_55 = {},
+            _55[0 /* ColorLight */] = '#225dc9',
+            _55[1 /* IconIon */] = 'ion-clipboard',
             _55
         ));
-        set('slugignore', (_56 = {},
-            _56[0 /* ColorLight */] = '#0da064',
+        set('npmignore', (_56 = {},
+            _56[0 /* ColorLight */] = '#cb3837',
             _56[1 /* IconIon */] = ['ion-minus-circled', 14],
+            _56[2 /* IconDev */] = 'devicons devicons-npm',
             _56
         ));
-        set('dockerignore', (_57 = {},
-            _57[0 /* ColorLight */] = '#0296C9',
+        set('slugignore', (_57 = {},
+            _57[0 /* ColorLight */] = '#0da064',
             _57[1 /* IconIon */] = ['ion-minus-circled', 14],
             _57
         ));
-        set('jpmignore', (_58 = {},
-            _58[0 /* ColorLight */] = '#5bac0d',
+        set('dockerignore', (_58 = {},
+            _58[0 /* ColorLight */] = '#0296C9',
             _58[1 /* IconIon */] = ['ion-minus-circled', 14],
             _58
         ));
-        set(['yml', 'yaml'], (_59 = {},
-            _59[0 /* ColorLight */] = '#008000',
-            _59[1 /* IconIon */] = ['ion-navicon', 14],
+        set('jpmignore', (_59 = {},
+            _59[0 /* ColorLight */] = '#5bac0d',
+            _59[1 /* IconIon */] = ['ion-minus-circled', 14],
             _59
         ));
-        set('sqf', (_60 = {},
-            _60[0 /* ColorLight */] = '#b9e11f',
-            _60[1 /* IconIon */] = 'ion-wand',
+        set(['yml', 'yaml'], (_60 = {},
+            _60[0 /* ColorLight */] = '#008000',
+            _60[1 /* IconIon */] = ['ion-navicon', 14],
             _60
         ));
-        set(['csv', 'tsv'], (_61 = {},
-            _61[0 /* ColorLight */] = '#217346',
-            _61[1 /* IconIon */] = 'ion-grid',
+        set('sqf', (_61 = {},
+            _61[0 /* ColorLight */] = '#b9e11f',
+            _61[1 /* IconIon */] = 'ion-wand',
             _61
         ));
-        // LaTeX
-        set(['tex', 'bib', 'sty'], (_62 = {},
-            _62[0 /* ColorLight */] = '#262686',
-            _62[1 /* IconIon */] = 'ion-document-text',
+        set(['csv', 'tsv'], (_62 = {},
+            _62[0 /* ColorLight */] = '#217346',
+            _62[1 /* IconIon */] = 'ion-grid',
             _62
         ));
-        //Singular Types
-        set('applescript', (_63 = {},
-            _63[0 /* ColorLight */] = '#afafaf',
-            _63[1 /* IconIon */] = 'ion-social-apple',
-            _63[2 /* IconDev */] = 'devicons devicons-apple',
+        // LaTeX
+        set(['tex', 'bib', 'sty'], (_63 = {},
+            _63[0 /* ColorLight */] = '#262686',
+            _63[1 /* IconIon */] = 'ion-document-text',
             _63
         ));
-        set('textile', (_64 = {},
-            _64[0 /* ColorLight */] = '#6f8696',
-            _64[1 /* IconIon */] = 'ion-quote',
+        //Singular Types
+        set('applescript', (_64 = {},
+            _64[0 /* ColorLight */] = '#afafaf',
+            _64[1 /* IconIon */] = 'ion-social-apple',
+            _64[2 /* IconDev */] = 'devicons devicons-apple',
             _64
         ));
-        set('matlab', (_65 = {},
-            _65[0 /* ColorLight */] = '#014495',
-            _65[1 /* IconIon */] = 'ion-clipboard',
+        set('textile', (_65 = {},
+            _65[0 /* ColorLight */] = '#6f8696',
+            _65[1 /* IconIon */] = 'ion-quote',
             _65
         ));
-        set('lisp', (_66 = {},
-            _66[0 /* ColorLight */] = '#f8c63d',
-            _66[1 /* IconIon */] = 'ion-ios-paperplane',
+        set('matlab', (_66 = {},
+            _66[0 /* ColorLight */] = '#014495',
+            _66[1 /* IconIon */] = 'ion-clipboard',
             _66
         ));
-        set('xsl', (_67 = {},
-            _67[0 /* ColorLight */] = '#68217a',
-            _67[1 /* IconIon */] = 'ion-code',
-            _67[2 /* IconDev */] = 'devicons devicons-code',
+        set('lisp', (_67 = {},
+            _67[0 /* ColorLight */] = '#f8c63d',
+            _67[1 /* IconIon */] = 'ion-ios-paperplane',
             _67
         ));
-        set('tcl', (_68 = {},
-            _68[0 /* ColorLight */] = '#c3b15f',
+        set('xsl', (_68 = {},
+            _68[0 /* ColorLight */] = '#68217a',
             _68[1 /* IconIon */] = 'ion-code',
             _68[2 /* IconDev */] = 'devicons devicons-code',
             _68
         ));
-        set('rst', (_69 = {},
-            _69[0 /* ColorLight */] = '#6f8696',
-            _69[1 /* IconIon */] = 'ion-ios-paper',
-            _69[2 /* IconDev */] = ['devicons devicons-rust', 18],
+        set('tcl', (_69 = {},
+            _69[0 /* ColorLight */] = '#c3b15f',
+            _69[1 /* IconIon */] = 'ion-code',
+            _69[2 /* IconDev */] = 'devicons devicons-code',
             _69
         ));
-        set('d', (_70 = {},
-            _70[0 /* ColorLight */] = '#960000',
-            _70[1 /* IconIon */] = 'ion-contrast',
-            _70[2 /* IconDev */] = 'devicons devicons-dlang',
+        set('rst', (_70 = {},
+            _70[0 /* ColorLight */] = '#6f8696',
+            _70[1 /* IconIon */] = 'ion-ios-paper',
+            _70[2 /* IconDev */] = ['devicons devicons-rust', 18],
             _70
         ));
-        set('r', (_71 = {},
-            _71[0 /* ColorLight */] = '#8495C0',
-            _71[1 /* IconIon */] = 'ion-ios-analytics',
+        set('d', (_71 = {},
+            _71[0 /* ColorLight */] = '#960000',
+            _71[1 /* IconIon */] = 'ion-contrast',
+            _71[2 /* IconDev */] = 'devicons devicons-dlang',
             _71
         ));
-        set('map', (_72 = {},
-            _72[0 /* ColorLight */] = '#e0591f',
-            _72[1 /* IconIon */] = 'ion-ios-photos-outline',
+        set('r', (_72 = {},
+            _72[0 /* ColorLight */] = '#8495C0',
+            _72[1 /* IconIon */] = 'ion-ios-analytics',
             _72
         ));
-        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71, _72;
+        set('map', (_73 = {},
+            _73[0 /* ColorLight */] = '#e0591f',
+            _73[1 /* IconIon */] = 'ion-ios-photos-outline',
+            _73
+        ));
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71, _72, _73;
     }
     exports.setExtensions = setExtensions;
     function setPrefixes(set) {

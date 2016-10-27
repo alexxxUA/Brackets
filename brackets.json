@@ -46,7 +46,7 @@
         "bower_components",
         ".git",
         "vendor",
-		".sass-cache"
+        ".sass-cache"
     ],
     "edc.brackets-snippets.hints": [
         {
@@ -268,7 +268,7 @@
     "dnbard.documents-toolbar.grayscaleIcons": false,
     "dnbard.documents-toolbar.showCloseButton": true,
     "brackets-icons.iconset": "devicons",
-    "useTabChar": true,
+    "useTabChar": false,
     "tabSize": 4,
     "denniskehrig.ShowWhitespace.checked": true,
     "fonts.fontSize": "12px",
@@ -295,5 +295,6 @@
     "hdy.brackets-shell.dark": false,
     "hdy.brackets-shell.trackProject": true,
     "hdy.brackets-shell.shell": "cmd.exe",
-    "wordWrap": false
+    "wordWrap": false,
+    "spaceUnits": 4
 }
