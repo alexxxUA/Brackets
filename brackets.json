@@ -290,7 +290,23 @@
     "funcdocr.author_auto": false,
     "funcdocr.atName": "",
     "language.fileExtensions": {
-        "xspf": "xml"
+        "xspf": "xml",
+        "jsp": "html",
+        "jspf": "html"
+    },
+    "language": {
+        "html": {
+            "spaceUnits": 4
+        },
+        "javascript": {
+            "spaceUnits": 4
+        },
+        "css": {
+            "spaceUnits": 2
+        },
+        "scss": {
+            "spaceUnits": 2
+        }
     },
     "hdy.brackets-shell.dark": false,
     "hdy.brackets-shell.trackProject": true,
